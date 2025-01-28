@@ -1,41 +1,88 @@
 export default {
   index: {
-    title: 'Home',
-    display: 'hidden',
+    title: "Home",
+    display: "hidden",
     theme: {
-      layout: 'raw'
-    }
+      layout: "raw",
+    },
   },
-  'dev-tracks': {
-    type: 'page',
-    title: 'Dev Tracks',
-    href: '/dev-tracks/quickstart'
+  projekty: {
+    type: "menu",
+    title: "Projekty",
+    href: "/projekty",
+    items: {
+      uslugowe: {
+        type: "page",
+        title: "Obiekty Usługowe",
+        href: "/projekty/uslugowe",
+      },
+      przemyslowe: {
+        type: "page",
+        title: "Obiekty Przemysłowe",
+        href: "/projekty/przemyslowe",
+      },
+      konserwatorskie: {
+        type: "page",
+        title: "Obiekty Konserwatorskie",
+        href: "/projekty/konserwatorskie",
+      },
+      jednorodzinne: {
+        type: "page",
+        title: "Mieszkaniowe Jednorodzinne",
+        href: "/projekty/jednorodzinne",
+      },
+      wielorodzinne: {
+        type: "page",
+        title: "Mieszkaniowe Wielorodzinne",
+        href: "/projekty/wielorodzinne",
+      },
+      wnetrza: {
+        type: "page",
+        title: "Wnętrza",
+        href: "/projekty/wnetrza",
+      },
+      urbanistyka: {
+        type: "page",
+        title: "Urbanistyka",
+        href: "/projekty/urbanistyka",
+      },
+    },
   },
-  docs: {
-    type: 'menu',
-    title: 'Documentation',
-    items: { 
-      'news': {
-        type: 'page',
-        title: "What's new?",
-        href: '/docs/news'
-      },
-      'device-app': {
-        title: 'Device App',
-        href: '/docs/device-app/getting-started'
-      },
-      'device-interaction': {
-        title: 'Device Interaction',
-        href: '/docs/device-interaction/getting-started'
-      },
-      'ledger-live': {
-        title: 'Ledger Live',
-        href: '/docs/ledger-live/introduction'
-      },
-      'clear-signing': {
-        title: 'Clear Signing',
-        href: '/docs/clear-signing/getting-started'
-      }
-    }
-  }
-}
+  kontakt: {
+    type: "page",
+    title: "Kontakt",
+    href: "/#kontakt",
+  },
+  // 'dev-tracks': {
+  //   type: 'page',
+  //   title: 'Projekty',
+  //   href: '/dev-tracks/quickstart'
+  // },
+  // docs: {
+  //   type: 'menu',
+  //   title: 'Projekty',
+  //   items: {
+  //     // 'news': {
+  //     //   type: 'page',
+  //     //   title: "What's new?",
+  //     //   href: '/docs/news'
+  //     // },
+  //     'device-app': {
+  //       title: 'OBIEKTY USŁUGOWE',
+  //       href: '/docs/device-app/getting-started'
+  //     },
+  //     'device-interaction': {
+  //       title: 'Device Interaction',
+  //       href: '/docs/device-interaction/getting-started'
+  //     },
+  //     'ledger-live': {
+  //       title: 'Ledger Live',
+  //       href: '/docs/ledger-live/introduction'
+  //     },
+  //     'clear-signing': {
+  //       title: 'Clear Signing',
+  //       href: '/docs/clear-signing/getting-started'
+  //     }
+  //   }
+  // }
+};

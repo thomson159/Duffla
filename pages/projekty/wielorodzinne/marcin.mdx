@@ -1,0 +1,31 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Budynek wielorodzinny Marcinkowskiego
+
+Budynek wielorodzinny z garażem wielostanowiskowym.  
+Adres: Katowice  
+Powierzchnia użytkowa: 6 900 m²  
+
+## Wizualizacja
+
+{Array.from({ length: 1 }, (_, i) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/wielo/marcin/${i + 1}.jpg`} />
+    </Zoom>
+    <br/>
+  </>
+))}
+
+## Rysunek
+
+<Zoom>
+  <img alt="portfolio" src={`/compressed/wielo/marcin/2.png`} style={{ backgroundColor: 'white' }}  />
+</Zoom>
+
+<br/>
+
+<Zoom>
+  <img alt="portfolio" src={`/compressed/wielo/marcin/3.jpg`} style={{ backgroundColor: 'white' }}  />
+</Zoom>

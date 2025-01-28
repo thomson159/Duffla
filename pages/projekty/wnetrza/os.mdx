@@ -1,0 +1,47 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Osiedle budynków jednorodzinnych Architektów
+
+Projekt wnętrz budynków jednorodzinnych.  
+Adres: Bielsko-Biała
+
+## Parter - wariant jasny
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 11 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/archi/1/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+## Parter - wariant ciemny
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 13 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/archi/1/c/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+## Piętro - sufit otwarty + antresola
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 11 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/archi/2/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+## Piętro - sufit standardowy + łazienka
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 10 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/archi/2/1/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>

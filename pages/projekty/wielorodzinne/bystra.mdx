@@ -1,0 +1,29 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Budynek wielorodzinny Bystra
+
+Budynek wielorodzinny z garażami.  
+Adres: Bystra Krakowska  
+Powierzchnia użytkowa: 1 100 m²  
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 5 }, (_, i) => (
+    <Zoom key={i}>
+      <img 
+        alt="portfolio" 
+        src={`/compressed/wielo/bystra/${i + 1}.jpg`} 
+        style={{ width: '100%', backgroundColor: 'white', objectFit: 'cover' }} 
+      />
+    </Zoom>
+  ))}
+</div>
+
+
+## Rysunek
+
+<Zoom>
+  <img alt="portfolio" src={`/compressed/wielo/bystra/7.png`} style={{ backgroundColor: 'white' }} />
+</Zoom>

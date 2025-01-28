@@ -1,0 +1,18 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+# Łowisko wędkarskie
+
+Łowisko wędkarskie z zapleczem socjalno-hotelowym, obejmujące zagospodarowanie 50-hektarowego stawu hodowlanego oraz budynek hotelowo-socjalny.  
+Adres: Ligota, koło Bielska-Białej  
+Powierzchnia terenu: 500 000 m²  
+Powierzchnia użytkowa budynku: 400 m²  
+
+{[1, 2, 3, 4, 5, 6].map((num) => (
+  <>
+    <br />
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/urban/lowisko/${num}.jpg`} />
+    </Zoom>
+  </>
+))}

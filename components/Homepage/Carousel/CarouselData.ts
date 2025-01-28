@@ -1,77 +1,45 @@
-export type CarouselItemType = {title: string, url: string}
+export type CarouselItemType = {title: string, url: string, link: string}
 export type CarouselType = CarouselItemType[]
 
 export const CarouselData: CarouselType = [
   {
-    title: "Litecoin",
-    url: "/icons/carousel/LTC.svg",
+    title: "bsjastrzebie",
+    url: "/icons/1.png",
+    link: "https://bsjastrzebie.pl/",
   },
   {
-    title: "Solana",
-    url: "/icons/carousel/SOL.svg",
+    title: "berndorf",
+    url: "/icons/2.png",
+    link: "https://berndorf.pl/",
   },
   {
-    title: "Phantom",
-    url: "/icons/carousel/Phantom.svg",
+    title: "blachotrapez",
+    url: "/icons/3.png",
+    link: "https://www.blachotrapez.eu/",
   },
   {
-    title: "Ethereum",
-    url: "/icons/carousel/ETH.svg",
+    title: "meta-hotel",
+    url: "/icons/4.png",
+    link: "https://www.meta-hotel.pl/",
   },
   {
-    title: "Avalanche",
-    url: "/icons/carousel/AVAX.svg",
+    title: "forch",
+    url: "/icons/5.png",
+    link: "https://www.forch.pl/",
   },
   {
-    title: "Metamask",
-    url: "/icons/carousel/Metamask.svg",
+    title: "ManufakturaGrossa",
+    url: "/icons/6.png",
+    link: "https://www.facebook.com/ManufakturaGrossa/",
   },
   {
-    title: "Bitcoin",
-    url: "/icons/carousel/BTC.svg",
+    title: "mdmnt",
+    url: "/icons/7.png",
+    link: "https://mdmnt.com/",
   },
   {
-    title: "Binance",
-    url: "/icons/carousel/BNB.svg",
-  },
-  {
-    title: "Tezos",
-    url: "/icons/carousel/XTZ.svg",
-  },
-  {
-    title: "Polygon",
-    url: "/icons/carousel/MATIC.svg",
-  },
-  {
-    title: "Cardano",
-    url: "/icons/carousel/ADA.svg",
-  },
-  {
-    title: "Tron",
-    url: "/icons/carousel/Tron.svg",
-  },
-  {
-    title: "Coinbase",
-    url: "/icons/carousel/Coinbase.svg",
-  },
-  {
-    title: "1Inch",
-    url: "/icons/carousel/1inch.svg",
-  },
-  {
-    title: "Ripple",
-    url: "/icons/carousel/XRP.svg",
-  },
-  {
-    title: "Wyre",
-    url: "/icons/carousel/Wyre.svg",
-  },
-  {
-    title: "MoonPay",
-    url: "/icons/carousel/Moonpay.svg",
-  },
-  {
-    title: "Uniswap",
-    url: "/icons/carousel/UNI.svg",
+    title: "rosinski",
+    url: "/icons/8.png",
+    link: "https://rosinski.com.pl/",
   },
 ]

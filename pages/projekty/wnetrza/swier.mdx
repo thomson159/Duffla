@@ -1,0 +1,20 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# Dom jednorodzinny Meszna Świerkowa
+
+Budynek mieszkalny jednorodzinny z garażem podziemnym.  
+Adres: Meszna  
+Powierzchnia użytkowa: ok. 225 m²  
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)', gap: '20px' }}>
+  {[
+    "8.jpg", "9.jpg", "13.jpg", "14.jpg"
+  ].map((file, index) => (
+    <Zoom key={index}>
+      <img alt="portfolio" src={`/compressed/jedno/swier/${file}`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>

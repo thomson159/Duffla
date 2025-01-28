@@ -1,0 +1,13 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Stadnina
+
+{[1, 2, 3].map((num) => (
+  <>
+    <br />
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/uslugowe/stadnina/${num}.jpg`} />
+    </Zoom>
+  </>
+))}

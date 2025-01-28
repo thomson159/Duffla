@@ -1,0 +1,18 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# Zespół sześciu budynków wielorodzinnych z garażami podziemnymi
+
+Zespół sześciu budynków wielorodzinnych z garażami podziemnymi.  
+Lokalizacja: Sosnowiec  
+Powierzchnia użytkowa: 19 050 m²  
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 9 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/wielo/sos/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>

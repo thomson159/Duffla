@@ -1,18 +1,20 @@
-import React from 'react'
-import Image from 'next/image'
-
+import React from "react";
+import Image from "next/image";
 
 interface CarouselItemProps {
   title: string;
   url: string;
+  link: string;
 }
 
-export const CarouselItem = ({ title, url }: CarouselItemProps) => {
+export const CarouselItem = ({ title, url, link }: CarouselItemProps) => {
   return (
     <div className="flex justify-center items-center">
-      <img src={url} alt={title} className="h-14 w-14"/>
+      <a target="_blank" href={ link }>
+        <img src={url} alt={title} className="" style={{ width: 200 }} />
+      </a>
     </div>
-  )
-}
+  );
+};
 
-export default CarouselItem
+export default CarouselItem;

@@ -1,0 +1,77 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+# Wnętrza
+
+Każde wnętrze to historia – tworzymy przestrzenie, które inspirują i wyrażają Twoje potrzeby.
+
+<br />
+
+<div style={{ width: "100%" }}>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(2, 1fr)",
+      gap: "14px",
+    }}
+  >
+    {[
+      {
+        title: "Restauracja „Bazylia”",
+        image: "/wnetrza/website/3.jpg",
+        link: "/projekty/wnetrza/bazylia",
+      },
+      {
+        title: "Osiedle Architektów",
+        image: "/jedno/archi/2/1.jpg",
+        link: "/projekty/wnetrza/os",
+      },
+      {
+        title: "Dom Mazańcowice",
+        image: "/jedno/dob/9.jpg",
+        link: "/projekty/wnetrza/dob",
+      },
+      {
+        title: "Meszna Świerkowa",
+        image: "/jedno/swier/8.jpg",
+        link: "/projekty/wnetrza/swier",
+      },
+      {
+        title: "Meszna Pod Skocznią",
+        image: "/jedno/meszna/4.jpg",
+        link: "/projekty/wnetrza/meszna",
+      },
+    ].map((project, index) => (
+      <div
+        key={index}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <a href={project.link} style={{ textDecoration: 'none' }}>
+          <h3
+            style={{
+              fontSize: 18,
+              width: "100%",
+            }}
+          >
+            {project.title}
+          </h3>
+          <img
+            alt={project.title}
+            src={`/compressed/${project.image}`}
+            style={{
+              width: "100%",
+              minHeight: 200,
+              objectFit: "cover",
+            }}
+          />
+        </a>
+      </div>
+    ))}
+  </div>
+</div>
+

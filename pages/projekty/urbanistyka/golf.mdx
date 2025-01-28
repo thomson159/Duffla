@@ -1,0 +1,18 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+# Pole golfowe
+
+Pole golfowe obejmujące 18-dołkowe pole golfowe z driving range, kompleks rezydencji i budynków apartamentowych, budynek klubowy oraz budynek hotelowy. <br />
+Adres: Jaworzno <br/>
+Powierzchnia użytkowa: 40 580 m² <br />
+Powierzchnia terenu: 125 ha
+
+{["0.png", "2.png", "3.jpg", "4.jpg", "5.jpg", "6.jpg"].map((num) => (
+  <>
+    <br />
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/urban/golf/${num}`} style={{ backgroundColor: "white" }} />
+    </Zoom>
+  </>
+))}

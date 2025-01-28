@@ -1,0 +1,31 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Dom jednorodzinny Bednarska
+
+Dom mieszkalny jednorodzinny wolnostojący z garażem.  
+Adres: Bielsko-Biała  
+Powierzchnia użytkowa: 184 m²  
+
+## Wizualizacja
+
+{Array.from({ length: 2 }, (_, i) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/bed/${i + 1}.jpg`} />
+    </Zoom>
+    <br/>
+  </>
+))}
+
+## Rysunek
+
+<Zoom>
+  <img alt="portfolio" src={`/compressed/jedno/bed/3.jpg`} />
+</Zoom>
+
+<br/>
+
+<Zoom>
+  <img alt="portfolio" src={`/compressed/jedno/bed/4.jpg`} />
+</Zoom>

@@ -1,0 +1,42 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Hala produkcyjna I
+
+Hala produkcyjna z budynkiem socjalno-biurowym oraz wiatą magazynową.  
+Adres: Andrychów  
+Powierzchnia użytkowa: 2 200 m²
+
+## Wizualizacja
+
+{[
+  "1.jpg", "2.jpg", "3.jpg", "4.jpg"
+].map((file) => (
+  <>
+    <br />
+    <Zoom>
+      <img 
+        alt="portfolio" 
+        src={`/compressed/przemysl/andry/${file}`} 
+        style={{ backgroundColor: 'white' }} 
+      />
+    </Zoom>
+  </>
+))}
+
+## Rysunek
+
+{[
+  "5.png"
+].map((file) => (
+  <>
+    <br />
+    <Zoom>
+      <img 
+        alt="portfolio" 
+        src={`/compressed/przemysl/andry/${file}`} 
+        style={{ backgroundColor: 'white' }} 
+      />
+    </Zoom>
+  </>
+))}

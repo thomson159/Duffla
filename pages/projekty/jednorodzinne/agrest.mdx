@@ -1,0 +1,28 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Dom jednorodzinny Agrestowa
+
+Dwa budynki jednorodzinne w zabudowie bliźniaczej z podziemnym garażem.  
+Adres: Bielsko-Biała  
+Powierzchnia użytkowa: 438 m²  
+
+## Wizualizacja
+
+{[1, 2].map((num) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/agrest/${num}.jpg`} />
+    </Zoom>
+  </>
+))}
+
+## Rysunek
+
+{[3, 4].map((num) => (
+  <>
+    <Zoom>
+      <img style={{ backgroundColor: "white" }} alt="portfolio" src={`/compressed/jedno/agrest/${num}.png`} />
+    </Zoom>
+  </>
+))}

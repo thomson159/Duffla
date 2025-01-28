@@ -4,43 +4,108 @@ export type FooterDataType = FooterBlockType[]
 
 export const FooterData: FooterDataType = [
   {
-    name: "Ledger Developer Portal",
+    name: "Duffla.pl",
     links: [
       {
         label: "Home",
-        link: "https://shop.ledger.com/pages/ledger-stax",
+        link: "",
         scrollLink: "home",
       },
       {
-        label: "Docs",
-        link: "/docs/dev-tracks/quickstart",
-        scrollLink: null,
-      },
-      {
-        label: "Discord",
-        link: "https://discord.gg/Ledger",
+        label: "Polityka Prywatności",
+        link: "https://docs.google.com/document/d/1O61mDrXCrHihsXu6SbYX0iL_ofZzOibFagUPYxojjO4/edit?usp=sharing",
         scrollLink: null,
       },
     ]
   },
   {
-    name: "Legal",
+    name: "Kontakt",
     links: [
       {
-        label: "Terms and Conditions",
-        link: "https://shop.ledger.com/pages/terms-and-conditions",
+        label: "📧 projekt@duffla.pl",
+        link: "mailto:projekt@duffla.pl",
         scrollLink: null,
       },
       {
-        label: "Ledger's privacy policy",
-        link: "https://www.ledger.com/privacy-policy",
-        scrollLink: null,
-      },
-      {
-        label: "Cookie statement",
-        link: "https://shop.ledger.com/pages/cookie-policy",
+        label: "📞 +48 33 811 58 20",
+        link: "tel:+48338115820",
         scrollLink: null,
       },
     ]
   },
+  {
+    name: "Projekty",
+    links: [
+      {
+        label: "Obiekty Usługowe",
+        link: "/projekty/uslugowe",
+        scrollLink: null,
+      },
+      {
+        label: "Obiekty Przemyslowe",
+        link: "/projekty/przemyslowe",
+        scrollLink: null,
+      },
+      {
+        label: "Obiekty Konserwatorskie",
+        link: "/projekty/konserwatorskie",
+        scrollLink: null,
+      },
+      {
+        label: "Mieszkaniowe Wielorodzinne",
+        link: "/projekty/przemyslowe",
+        scrollLink: null,
+      },
+      {
+        label: "Mieszkaniowe Jednorodzinne",
+        link: "/projekty/jednorodzinne",
+        scrollLink: null,
+      },
+      {
+        label: "Wnętrza",
+        link: "/projekty/wnetrza",
+        scrollLink: null,
+      },
+      {
+        label: "Urbanistyka",
+        link: "/projekty/urbanistyka",
+        scrollLink: null,
+      },
+    ]
+  },
+  {
+    name: "Wykonanie",
+    links: [
+      {
+        label: "Web Crafty",
+        link: "https://webcrafty.pl/",
+        scrollLink: null,
+      },
+      {
+        label: "Thomson",
+        link: "https://thomson159.github.io/",
+        scrollLink: null,
+      },
+    ]
+  },
+  // {
+  //   name: "",
+  //   links: [
+  //     // {
+  //     //   label: "Terms and Conditions",
+  //     //   link: "https://shop.ledger.com/pages/terms-and-conditions",
+  //     //   scrollLink: null,
+  //     // },
+  //     // {
+  //     //   label: "polityka prywatności",
+  //     //   link: "https://www.ledger.com/privacy-policy",
+  //     //   scrollLink: null,
+  //     // },
+  //     // {
+  //     //   label: "Cookie statement",
+  //     //   link: "https://shop.ledger.com/pages/cookie-policy",
+  //     //   scrollLink: null,
+  //     // },
+  //   ]
+  // },
 ]

@@ -1,0 +1,44 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Dom jednorodzinny Cynkowa
+
+Dom jednorodzinny wolnostojący z podziemnym garażem.  
+Adres: Bielsko-Biała  
+Powierzchnia użytkowa: 296 m²  
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 16 }, (_, i) => (
+    <Zoom key={i}>
+      <img 
+        alt="portfolio" 
+        src={`/compressed/jedno/cynk/${i + 1}.jpg`} 
+        style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
+      />
+    </Zoom>
+  ))}
+</div>
+
+## Rysunek
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {[17, 18, 16].map((i) => (
+    <Zoom key={i}>
+      <img 
+        alt="portfolio" 
+        src={`/compressed/jedno/cynk/${i + 1}.jpg`} 
+        style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
+      />
+    </Zoom>
+  ))}
+  
+  <Zoom>
+    <img 
+      alt="portfolio" 
+      src={`/compressed/jedno/cynk/20.png`} 
+      style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
+    />
+  </Zoom>
+</div>

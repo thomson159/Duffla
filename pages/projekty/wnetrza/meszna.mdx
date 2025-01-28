@@ -1,0 +1,21 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Dom jednorodzinny Meszna Pod Skocznią
+
+Budynek mieszkalny jednorodzinny z garażem podziemnym.  
+Adres: Meszna  
+Powierzchnia użytkowa: ok. 373 m²
+
+<br/>
+
+{[
+    "4.jpg", "5.jpg", "6.jpg", "7.jpg"
+  ].map((file, index) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/meszna/${file}`} />
+    </Zoom>
+    <br/>
+  </>
+))}

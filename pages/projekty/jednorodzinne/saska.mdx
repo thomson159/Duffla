@@ -1,0 +1,14 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# Saska
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 7 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/saska/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>

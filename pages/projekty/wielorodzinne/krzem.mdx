@@ -1,0 +1,15 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Krzemienna
+
+<br/>
+
+{Array.from({ length: 5 }, (_, i) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/wielo/krzem/${i + 1}.jpg`} />
+    </Zoom>
+    <br/>
+  </>
+))}

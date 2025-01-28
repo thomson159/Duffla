@@ -1,0 +1,111 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+# Obiekty Mieszkaniowe Wielorodzinne
+
+Mieszkania, które odpowiadają na potrzeby współczesnych mieszkańców – przestronne, funkcjonalne i pełne światła.
+
+## Galeria
+
+<div style={{ width: "100%" }}>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(2, 1fr)",
+      gap: "14px",
+    }}
+  >
+    {[
+      {
+        title: "Wielorodzinny Marcinkowskiego",
+        image: "marcin/1.jpg",
+        link: "/projekty/wielorodzinne/marcin",
+      },
+      {
+        title: "Wielorodzinny Bystra",
+        image: "bystra/1.jpg",
+        link: "/projekty/wielorodzinne/bystra",
+      },
+      {
+        title: "Zespół budynków",
+        image: "sos/1.jpg",
+        link: "/projekty/wielorodzinne/sos",
+      },
+      {
+        title: "1 Maja",
+        image: "1maja/1.jpg",
+        link: "/projekty/wielorodzinne/maja",
+      },
+      {
+        title: "Brodzińskiego",
+        image: "bro/1.jpg",
+        link: "/projekty/wielorodzinne/bro",
+      },
+      {
+        title: "Konwaliowa",
+        image: "konwa/1.jpg",
+        link: "/projekty/wielorodzinne/konwa",
+      },
+      {
+        title: "Krzemienna",
+        image: "krzem/1.jpg",
+        link: "/projekty/wielorodzinne/krzem",
+      },
+    ].map((project, index) => (
+      <div
+        key={index}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <a href={project.link} style={{ textDecoration: "none" }}>
+          <h3
+            style={{
+              fontSize: 18,
+              width: "100%",
+            }}
+          >
+            {project.title}
+          </h3>
+          <div
+            style={{
+              width: "100%",
+              height: "200px" /* Stała wysokość dla spójnego wyglądu */,
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              alt={project.title}
+              src={`/compressed/wielo/${project.image}`}
+              style={{
+                width: "100%",
+                minHeight: 200,
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        </a>
+      </div>
+    ))}
+  </div>
+</div>
+
+## Pozostałe projekty
+
+**6 budynków wielorodzinnych** – 384 mieszkania w Sosnowcu  
+Powierzchnia użytkowa: 24 000 m²
+
+**Budynek wielorodzinny** – 9 mieszkań w Bielsku-Białej  
+Powierzchnia użytkowa: 570 m²
+
+**Budynek wielorodzinny** – 8 mieszkań w Bielsku-Białej  
+Powierzchnia użytkowa: 610 m²
+
+**Budynek wielorodzinny** – 14 mieszkań w Bielsku-Białej  
+Powierzchnia użytkowa: 1 130 m²

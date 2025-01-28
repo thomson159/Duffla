@@ -1,0 +1,40 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Warsztat samochodowy
+
+Warsztat samochodowy z częścią biurowo-socjalną i mieszkalną.  
+Adres: Bielsko-Biała  
+Powierzchnia użytkowa: 480 m²
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 12 }, (_, i) => (
+    <div key={i} style={{ }}>
+      <Zoom>
+        <img 
+          alt="portfolio" 
+          src={`/compressed/uslugowe/auto/${i + 1}.jpg`} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} 
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>
+
+## Rysunek
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {[12, 13, 14].map((i) => (
+    <div key={i} style={{ }}>
+      <Zoom>
+        <img 
+          alt="portfolio" 
+          src={`/compressed/uslugowe/auto/${i + 1}.jpg`} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} 
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>

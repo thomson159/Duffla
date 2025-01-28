@@ -1,0 +1,24 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Restauracja „Bazylia”
+
+Projekt wnętrz restauracji „Bazylia”.  
+Adres: Bielsko-Biała
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {[
+    "1.jpg", "2.jpg", "3.jpg", "website/1.jpg", "website/2.jpg", "website/3.jpg", "website/4.jpg", "website/5.jpg", 
+    "website/6.jpg", "website/7.jpg", "website/8.jpg", "website/9.jpg", "website/10.jpg", "website/11.jpg", 
+    "website/12.jpg", "website/13.jpg", "website/14.jpg", "website/15.jpg", "website/16.jpg", "website/17.jpg", 
+    "website/18.jpg", "website/19.jpg", "website/20.jpg", "website/21.jpg", "website/22.jpg", "website/23.jpg"
+  ].map((file, index) => (
+    <div key={index} style={{ }}>
+      <Zoom>
+        <img alt="portfolio" src={`/compressed/wnetrza/${file}`} style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} />
+      </Zoom>
+    </div>
+  ))}
+</div>

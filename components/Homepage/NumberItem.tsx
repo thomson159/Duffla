@@ -25,7 +25,7 @@ export const NumberItem_1: FC<NumberItemProps> = ({number, text, className, ...p
 
   return (
     <div className={combination("flex flex-col w-[320px] phone:w-[350px] items-center gap-5 text-center", className)} {...props}>
-      <div className="font-mono-medium text-heading-5 lg:text-heading-3 text-purple">
+      <div className="font-mono-medium text-heading-5 lg:text-heading-3">
         <animated.span>{spring.val.to(val => (Math.floor(val)).toLocaleString("fr-FR"))}</animated.span>
         {nonStringValue}
       </div>
@@ -48,7 +48,7 @@ export const NumberItem_2: FC<NumberItemProps> = ({number, text, className, ...p
 
   return (
     <div className={combination("flex flex-col w-[320px] phone:w-[350px] items-center gap-5 text-center", className)} {...props}>
-      <div className="font-mono-medium text-heading-5 lg:text-heading-3 text-purple">
+      <div className="font-mono-medium text-heading-5 lg:text-heading-3">
         <animated.span>{spring.val.to(val => (Math.floor(val)).toLocaleString("fr-FR"))}</animated.span>
         {nonStringValue}
       </div>
@@ -68,10 +68,10 @@ export const NumberItem_3: FC<NumberItemProps> = ({number, text, className, ...p
     config: { mass:3, tension:280, friction: 90, easing: easings.easeOutExpo },
   }
   );
-
+// text-purple
   return (
     <div className={combination("flex flex-col w-[320px] phone:w-[350px] items-center gap-5 text-center", className)} {...props}>
-      <div className="font-mono-medium text-heading-5 lg:text-heading-3 text-purple">
+      <div className="font-mono-medium text-heading-5 lg:text-heading-3">
         <animated.span>{spring.val.to(val => (Math.floor(val)).toLocaleString("fr-FR"))}</animated.span>
         {nonStringValue}
       </div>
@@ -79,4 +79,3 @@ export const NumberItem_3: FC<NumberItemProps> = ({number, text, className, ...p
     </div>
   )
 }
-
