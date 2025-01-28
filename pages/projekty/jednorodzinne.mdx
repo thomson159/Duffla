@@ -1,0 +1,188 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+<div
+  style={{
+    width: "100%",
+    height: "200px",
+    overflow: "hidden",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 40,
+  }}
+>
+  <img
+    alt={"image"}
+    src={`/compressed/jedno/dob/1.jpg`}
+    style={{
+      width: "100%",
+      minHeight: 200,
+      objectFit: "cover",
+    }}
+  />
+</div>
+
+# Obiekty Mieszkaniowe Jednorodzinne
+
+Każdy projekt, który tworzymy, jest wynikiem głębokiego zrozumienia unikalnych potrzeb rodziny. Naszym celem jest zaprojektowanie przestrzeni, która nie tylko spełnia funkcjonalne wymagania, ale także stwarza przytulne i komfortowe miejsce do życia. Dbamy o to, by każdy detal był dopasowany do stylu życia przyszłych mieszkańców, tak aby każdy dom stał się odzwierciedleniem ich marzeń i oczekiwań. Projektujemy z myślą o długoterminowej wygodzie, tworząc przestrzenie, które będą towarzyszyć rodzinie na co dzień, przez wiele lat.
+
+## Galeria
+
+<div style={{ width: "100%" }}>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(2, 1fr)",
+      gap: "14px",
+    }}
+  >
+    {[
+      {
+        title: "Mazańcowice",
+        image: "dob/1.jpg",
+        link: "/projekty/jednorodzinne/dob",
+      },
+      {
+        title: "Meszna Świerkowa",
+        image: "swier/1.jpg",
+        link: "/projekty/jednorodzinne/swier",
+      },
+      {
+        title: "Meszna Pod Skocznią",
+        image: "meszna/1.jpg",
+        link: "/projekty/jednorodzinne/meszna",
+      },
+      {
+        title: "Architektów",
+        image: "archi/1.jpg",
+        link: "/projekty/jednorodzinne/archi",
+      },
+      {
+        title: "Cynkowa",
+        image: "cynk/1.jpg",
+        link: "/projekty/jednorodzinne/cynk",
+      },
+      {
+        title: "Bednarska",
+        image: "bed/1.jpg",
+        link: "/projekty/jednorodzinne/bed",
+      },
+      {
+        title: "Agrestowa",
+        image: "agrest/1.jpg",
+        link: "/projekty/jednorodzinne/agrest",
+      },
+      {
+        title: "Czerwona",
+        image: "czer/1.png",
+        link: "/projekty/jednorodzinne/czer",
+      },
+      {
+        title: "Przeździeckiego",
+        image: "prze/1.jpg",
+        link: "/projekty/jednorodzinne/prze",
+      },
+      {
+        title: "Saska",
+        image: "saska/1.jpg",
+        link: "/projekty/jednorodzinne/saska",
+      },
+      {
+        title: "Tańskiego",
+        image: "tans/1.jpg",
+        link: "/projekty/jednorodzinne/tans",
+      },
+      {
+        title: "Wspólna",
+        image: "wspol/1.jpg",
+        link: "/projekty/jednorodzinne/wspol",
+      },
+    ].map((project, index) => (
+      <div
+        key={index}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <a href={project.link} style={{ textDecoration: "none" }}>
+          <h3
+            style={{
+              fontSize: 16,
+              width: "100%",
+            }}
+          >
+            {project.title}
+          </h3>
+          <div
+            style={{
+              width: "100%",
+              height: "300px" /* Stała wysokość dla spójnego wyglądu */,
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              alt={project.title}
+              src={`/compressed/jedno/${project.image}`}
+              style={{
+                width: "100%",
+                minHeight: 300,
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        </a>
+      </div>
+    ))}
+  </div>
+</div>
+
+## Pozostałe projekty
+
+**Rezydencja przy stadninie koni** w Łazach, koło Bielska-Białej  
+Powierzchnia użytkowa: 500 m²
+
+**Dwa budynki jednorodzinne w zabudowie bliźniaczej** – 4 zespoły w Bielsku-Białej  
+Powierzchnia użytkowa: 350 m²
+
+**Zespół 3 budynków jednorodzinnych w zabudowie szeregowej** – 6 mieszkań, Kozy, koło Bielska-Białej  
+Powierzchnia użytkowa: 540 m²
+
+**Zespół 3 budynków jednorodzinnych w zabudowie bliźniaczej** – 6 mieszkań, Kozy, koło Bielska-Białej  
+Powierzchnia użytkowa: 540 m²
+
+**Zespół 4 budynków w zabudowie szeregowej** – 8 mieszkań w Bielsku-Białej  
+Powierzchnia użytkowa: 420 m²
+
+**Budynek jednorodzinny z garażem w przyziemiu** w Bielsku-Białej  
+Powierzchnia użytkowa: 150 m²
+
+**Szesnaście budynków jednorodzinnych w zabudowie bliźniaczej** w Bielsku-Białej  
+Powierzchnia użytkowa: 3 000 m²
+
+**Trzy budynki jednorodzinne w zabudowie szeregowej** w Bielsku-Białej  
+Powierzchnia użytkowa: 430 m²
+
+**Sześć budynków jednorodzinnych w zabudowie bliźniaczej** w Bielsku-Białej  
+Powierzchnia użytkowa: 580 m²
+
+**Dwa budynki dwulokalowe jednorodzinne w zabudowie bliźniaczej** w Międzyrzeczu Dolnym  
+Powierzchnia użytkowa: 360 m²
+
+**Budynek jednorodzinny** w Bielsku-Białej  
+Powierzchnia użytkowa: 170 m²
+
+**Budynek jednorodzinny, dwulokalowy, parterowy** w Bielsku-Białej  
+Powierzchnia użytkowa: 150 m²
+
+**Budynek jednorodzinny** w Jasienicy  
+Powierzchnia użytkowa: 310 m²
+
+**Budynek jednorodzinny wolnostojący z garażem** w Bielsku-Białej  
+Powierzchnia użytkowa: 266 m²

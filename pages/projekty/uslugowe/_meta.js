@@ -1,0 +1,15 @@
+export default {
+  meta: "META Szczyrk",
+  meta3: "META III Szczyrk",
+  auto: "Warsztat",
+  biuro: "Biuro",
+  hotel: "Hotel",
+  jaworzno: "Jaworzno",
+  kfc: "KFC",
+  partyzantow: "Partyzantów",
+  pilsudzkiego: "Piłsudzkiego",
+  rybaczowka: "Rybaczówka",
+  stadnina: "Stadnina",
+  szkola: "Szkoła",
+  vaco: "Vaco",
+};

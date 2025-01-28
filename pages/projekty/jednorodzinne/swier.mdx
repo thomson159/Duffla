@@ -1,0 +1,40 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# **Dom Meszna Świerkowa – Nowoczesność w Harmonii z Naturą**
+
+Projekt domu jednorodzinnego w Mesznej Świerkowej to idealne połączenie nowoczesnego designu i funkcjonalności. Budynek o powierzchni użytkowej około 225 m² został zaprojektowany z myślą o komforcie rodziny oraz jej bliskim kontakcie z naturą. Z garażem podziemnym, przestronnymi wnętrzami i dużymi oknami, które wpuszczają naturalne światło, stanowi doskonałą przestrzeń do życia.
+
+Dom w Mesznej Świerkowej wyróżnia się nowoczesną architekturą, z wykorzystaniem naturalnych materiałów, takich jak drewno i kamień, które wpisują się w otaczający krajobraz. Przemyślane rozmieszczenie pomieszczeń zapewnia wygodę i komfort codziennego życia, natomiast garaż podziemny jest praktycznym rozwiązaniem, które pozwala zaoszczędzić miejsce na działce.
+
+Projekt stawia na spójność z naturą, a jednocześnie oferuje wszystkie udogodnienia, jakie współczesne domy mogą zaoferować. To przestrzeń, w której życie toczy się w zgodzie z otoczeniem.
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Meszna  
+📐 **Powierzchnia użytkowa:** ok. 225 m²  
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {[
+    "1.jpg", "3.jpg", "4.jpg", "5.jpg", "7.jpg", "10.jpg", "11.jpg", "2.jpg", "12.jpg"
+  ].map((file, index) => (
+    <Zoom key={index}>
+      <img alt="portfolio" src={`/compressed/jedno/swier/${file}`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+## Wnętrze
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)', gap: '20px' }}>
+  {[
+    "8.jpg"
+  ].map((file, index) => (
+    <Zoom key={index}>
+      <img alt="portfolio" src={`/compressed/jedno/swier/${file}`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+[więcej]( /projekty/wnetrza/swier )

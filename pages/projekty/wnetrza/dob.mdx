@@ -1,0 +1,26 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# **Dom Mazańcowice – Nowoczesne Wnętrze z Charakternym Akcentem**
+
+Projekt wnętrz domu jednorodzinnego „Mazańcowice” to przestronna, funkcjonalna przestrzeń, w której nowoczesny design łączy się z przytulnym ciepłem. Z powierzchnią użytkową około 263 m², wnętrze zostało zaprojektowane z myślą o komforcie i wygodzie mieszkańców, oferując im wyjątkową przestrzeń do codziennego życia.
+
+Wnętrza zostały zaaranżowane w sposób, który zapewnia doskonałą harmonię między otwartą przestrzenią a wydzielonymi strefami. Główna część domu to otwarta przestrzeń salonu z kuchnią, w której naturalne światło wpada przez dużą liczbę okien, tworząc jasne i przestronne pomieszczenie. Dodatkowo, nowoczesne elementy wyposażenia, takie jak minimalistyczne meble, wysokiej jakości materiały i starannie dobrane akcenty, podkreślają elegancki charakter wnętrza.
+
+Projektując wnętrza tego domu, zadbano o każdy szczegół, by stworzyć przestrzeń, w której mieszkańcy czują się komfortowo i swobodnie. Zastosowanie naturalnych materiałów, takich jak drewno, szkło i kamień, w połączeniu z nowoczesnymi technologiami, pozwala na stworzenie wnętrza, które jest zarówno funkcjonalne, jak i estetyczne.
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Mazańcowice  
+📐 **Powierzchnia użytkowa:** ok. 263 m²  
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)', gap: '20px' }}>
+  {[
+    "9.jpg", "10.jpg", "11.jpg"
+  ].map((file, index) => (
+    <Zoom key={index}>
+      <img alt="portfolio" src={`/compressed/jedno/dob/${file}`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>

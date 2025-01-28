@@ -1,9 +1,8 @@
-import { FC, HTMLAttributes } from 'react'
-import Image from "next/image"
-import { combination } from '../../lib/utils';
-import { Tag } from './Tag';
-import { useRouter } from 'next/navigation';
-
+import { FC, HTMLAttributes } from "react";
+import Image from "next/image";
+import { combination } from "../../lib/utils";
+import { Tag } from "./Tag";
+import { useRouter } from "next/navigation";
 
 interface ExampleCardProps extends HTMLAttributes<HTMLButtonElement> {
   icon: "coinbase" | "cosmos" | "lido" | "moonpay-purple" | "objkt" | "solana";
@@ -13,49 +12,72 @@ interface ExampleCardProps extends HTMLAttributes<HTMLButtonElement> {
   type: "device" | "interaction" | "blockchain" | "live-app";
 }
 
-export const ExampleCard: FC<ExampleCardProps> = ({icon, title, subtitle, description, type, className, ...props}) => {  
+export const ExampleCard: FC<ExampleCardProps> = ({
+  icon,
+  title,
+  subtitle,
+  description,
+  type,
+  className,
+  ...props
+}) => {
   const router = useRouter();
-  
+
   const handleClick = () => {
     switch (type) {
       case "device":
-        router.push("/docs/device-app/getting-started")
+        router.push("/docs/device-app/getting-started");
         break;
       case "interaction":
-        router.push("/docs/device-interaction/getting-started")
+        router.push("/docs/device-interaction/getting-started");
         break;
       case "blockchain":
-        router.push("/docs/ledger-live/accounts/getting-started")
+        router.push("/docs/ledger-live/accounts/getting-started");
         break;
       case "live-app":
-        router.push("/docs/ledger-live/discover/getting-started")
+        router.push("/docs/ledger-live/discover/getting-started");
         break;
       default:
         break;
     }
-  }
+  };
 
   return (
-    <button type="button" onClick={handleClick} className={combination("group flex flex-col w-[384px] px-6 py-8 rounded border-[0.5px] border-grey-700 hover:border-white bg-grey-900 text-left ease-linear duration-300", className)} {...props}>
+    <button
+      type="button"
+      // onClick={handleClick}
+      className={combination(
+        "group flex flex-col w-[384px] px-6 py-8 rounded border-[0.5px] border-grey-700 hover:border-white bg-grey-900 text-left ease-linear duration-300",
+        className
+      )}
+      {...props}
+    >
       <div className="flex gap-4 items-center">
-        <div className="flex items-center justify-center w-8 h-8 bg-white rounded-md">
+        {/* <div className="flex items-center justify-center w-8 h-8 bg-white rounded-md">
           <Image src={require(`../../public/icons/${icon}.png`)} alt="icon" className="w-6" />
+        </div> */}
+        <div className="text-heading-6 font-semibold tracking-tight-1">
+          {title}
         </div>
-        <div className="text-heading-6 font-semibold tracking-tight-1">{title}</div>
       </div>
-      <div className="text-p font-semibold text-grey-300 mt-6 !leading-[28px]">{subtitle}</div>
-      <div className="text-p text-grey-300 !leading-[28px] mb-6">{description}</div>
-      <div className="flex w-full place-content-between mt-auto">
-        {/* <Tag type={type} /> */}
+      ⭐⭐⭐⭐⭐
+      <br/>
+      <br/>
+      {/* <div className="text-p font-semibold text-grey-300 mt-6 !leading-[28px]">{subtitle}</div> */}
+      <div className="text-p text-grey-300 !leading-[28px] mb-6">
+        {description}
+      </div>
+      {/* <div className="flex w-full place-content-between mt-auto">
+        <Tag type={type} />
         <div className="items-center gap-2 hidden md:flex opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 ease-linear duration-300">
           <span className="text-p-caption underline whitespace-nowrap">Get your own project started</span>
           <img src="/icons/arrow-right-white.svg" alt="button icon" />
         </div>
-      </div>
-      <div className="items-center gap-2 mt-6 flex md:hidden">
+      </div> */}
+      {/* <div className="items-center gap-2 mt-6 flex md:hidden">
         <span className="text-p-caption underline whitespace-nowrap">Plan this journey</span>
         <img src="/icons/arrow-right-white.svg" alt="button icon" />
-      </div>
+      </div> */}
     </button>
-  )
-}
+  );
+};

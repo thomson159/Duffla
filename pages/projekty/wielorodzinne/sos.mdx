@@ -1,0 +1,22 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# **Zespół Budynków Wielorodzinnych w Sosnowcu – Nowoczesne Mieszkania z Garażami Podziemnymi**  
+
+Projekt osiedla w Sosnowcu to kompleks sześciu budynków wielorodzinnych, zaprojektowanych z myślą o komforcie i funkcjonalności mieszkańców. Inwestycja łączy nowoczesną architekturę z przemyślanym układem przestrzennym, zapewniając wygodne warunki do życia.  
+
+Każdy budynek został wyposażony w garaże podziemne, co znacząco zwiększa komfort użytkowania i estetykę osiedla. Jasne elewacje, przestronne balkony i duże przeszklenia podkreślają nowoczesny charakter zabudowy, a zrównoważone rozwiązania technologiczne zapewniają energooszczędność i trwałość konstrukcji.  
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Sosnowiec  
+🏢 **Powierzchnia użytkowa:** 19 050 m²  
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 9 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/wielo/sos/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>

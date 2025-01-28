@@ -1,0 +1,15 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Tańskiego
+
+<br/>
+
+{Array.from({ length: 3 }, (_, i) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/tans/${i + 1}.jpg`} />
+    </Zoom>
+    <br/>
+  </>
+))}

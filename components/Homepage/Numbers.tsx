@@ -15,13 +15,13 @@ export const Numbers = () => {
     <div className="relative bg-black">
       <div className="max-w-[1216px] mx-auto flex items-center justify-center px-4 py-16 md:px-28 md:py-20 bg-purple-radial-gradient-smaller-mobile md:bg-purple-radial-gradient-smaller">
         <div className="flex flex-col md:flex-row gap-6 md:gap-4 w-full items-center md:items-stretch place-content-between" id="overview">
-          <NumberItem_1 number="200+" text="blockchain protocols secured" />
+          <NumberItem_1 number="200+" text="wykonane projekty" />
           <VerticalSeparator />
           <HorizontalSeparator />
-          <NumberItem_2 number="200+" text="compatible dApps" />
+          <NumberItem_2 number="200+" text="zadowoleni klienci" />
           <VerticalSeparator />
           <HorizontalSeparator />
-          <NumberItem_3 number="7000000+" text="devices sold worldwide" />
+          <NumberItem_3 number="7000000+" text="wypite filiżanki kawy" />
         </div>
       </div>
     </div>

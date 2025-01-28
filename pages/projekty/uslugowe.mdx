@@ -1,0 +1,198 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+<div
+  style={{
+    width: "100%",
+    height: "200px",
+    overflow: "hidden",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 40,
+  }}
+>
+  <img
+    alt={"image"}
+    src={`/compressed/uslugowe/meta3/1.jpg`}
+    style={{
+      width: "100%",
+      minHeight: 200,
+      objectFit: "cover",
+    }}
+  />
+</div>
+
+# Obiekty Usługowe
+
+Tworzymy nowoczesne obiekty usługowe, które nie tylko spełniają najwyższe standardy funkcjonalności, ale także stają się wizytówką Twojej firmy. Nasze projekty łączą innowacyjny design z przemyślaną ergonomią, zapewniając komfort zarówno pracownikom, jak i klientom. Dzięki zastosowaniu nowoczesnych technologii i efektywnych rozwiązań przestrzennych tworzymy miejsca, które sprzyjają rozwojowi biznesu i zwiększają jego konkurencyjność. Naszym celem jest nie tylko estetyka, ale także optymalizacja kosztów eksploatacji oraz dbałość o zrównoważony rozwój. Każdy projekt dostosowujemy do indywidualnych potrzeb, aby idealnie wspierał sukces Twojej firmy.
+
+## Galeria
+
+<div style={{ width: "100%" }}>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(2, 1fr)",
+      gap: "14px",
+    }}
+  >
+    {[
+      {
+        title: "Hotel META",
+        image: "meta/1.jpg",
+        link: "/projekty/uslugowe/meta",
+      },
+      {
+        title: "Meta III Szczyrk",
+        image: "meta3/1.jpg",
+        link: "/projekty/uslugowe/meta3",
+      },
+      {
+        title: "Warsztat",
+        image: "auto/1.jpg",
+        link: "/projekty/uslugowe/auto",
+      },
+      {
+        title: "Biuro",
+        image: "biuro/1.jpg",
+        link: "/projekty/uslugowe/biuro",
+      },
+      {
+        title: "Hotel",
+        image: "hotel/1.jpg",
+        link: "/projekty/uslugowe/hotel",
+      },
+      {
+        title: "Jaworzno",
+        image: "jaworzno/1.jpg",
+        link: "/projekty/uslugowe/jaworzno",
+      },
+      { title: "KFC", image: "kfc/1.jpg", link: "/projekty/uslugowe/kfc" },
+      {
+        title: "Partyzantów",
+        image: "part/1.jpg",
+        link: "/projekty/uslugowe/partyzantow",
+      },
+      {
+        title: "Piłsudzkiego",
+        image: "pil/2.jpg",
+        link: "/projekty/uslugowe/pilsudzkiego",
+      },
+      {
+        title: "Rybaczówka",
+        image: "ryba/1.jpg",
+        link: "/projekty/uslugowe/rybaczowka",
+      },
+      {
+        title: "Stadnina",
+        image: "stadnina/1.jpg",
+        link: "/projekty/uslugowe/stadnina",
+      },
+      {
+        title: "Szkoła",
+        image: "szkola/1.jpg",
+        link: "/projekty/uslugowe/szkola",
+      },
+      { title: "Vaco", image: "vaco/1.jpg", link: "/projekty/uslugowe/vaco" },
+    ].map((project, index) => (
+      <div
+        key={index}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          transition: "all 0.3s ease-in-out",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.2)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.boxShadow = "none";
+        }}
+      >
+        <a href={project.link} style={{ textDecoration: "none" }}>
+          <h3
+            style={{
+              fontSize: 18,
+              width: "100%",
+              transition: "color 0.3s",
+            }}
+          >
+            {project.title}
+          </h3>
+          <div
+            style={{
+              width: "100%",
+              height: "300px",
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              alt={project.title}
+              src={`/compressed/uslugowe/${project.image}`}
+              style={{
+                width: "100%",
+                minHeight: 300,
+                objectFit: "cover",
+                transition: "opacity 0.3s ease-in-out, transform 0.3s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = "0.8";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = "1";
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+            />
+          </div>
+        </a>
+      </div>
+    ))}
+  </div>
+</div>
+
+## Pozostałe projekty
+
+**Ultramedic** – centrum leczniczo-rehabilitacyjno-szkoleniowe w Bielsku-Białej  
+Powierzchnia użytkowa: 3 000 m²
+
+**Hala sportowa** z zapleczem socjalnym w Kaniowie, koło Bielska-Białej  
+Powierzchnia użytkowa: 1 220 m²
+
+**Porsche** – budynek usługowy, warsztat oraz salon samochodowy Porsche w Międzyrzeczu Górnym, koło Bielska-Białej  
+Projekt dla Roberta Lukasa, zawodnika Porsche Cup  
+Powierzchnia użytkowa: 1 300 m²
+
+**Zakład leczniczy weterynaryjny** z hotelem dla zwierząt w Bielsku-Białej  
+Powierzchnia użytkowa: 300 m²
+
+**Budynek zabiegowo-rehabilitacyjny** dla Beskidzkiego Zespołu Leczniczo-Rehabilitacyjnego w Jaworzu, koło Bielska-Białej  
+Zawiera kąpiele solankowe, jacuzzi solankowe, saunę oraz masaże  
+Powierzchnia użytkowa: 250 m²
+
+**Basen kąpieli solankowych** dla Beskidzkiego Zespołu Leczniczo-Rehabilitacyjnego w Jaworzu, koło Bielska-Białej  
+Powierzchnia użytkowa: 150 m²
+
+**Budynek hotelowo-usługowy** w Brennej  
+Powierzchnia użytkowa: 1 000 m²
+
+**Hala usługowa** z częścią socjalno-biurową w Bielsku-Białej  
+Powierzchnia użytkowa: 1 350 m²
+
+**Budynek usługowy** (zakład krawiecki) z zapleczem socjalno-biurowym oraz częścią handlową w Bielsku-Białej  
+Powierzchnia użytkowa: 1 000 m²
+
+**Bosch** – warsztat samochodowy Bosch w Bielsku-Białej  
+Powierzchnia użytkowa: 700 m²
+
+**Budynek handlowo-usługowy** w Bielsku-Białej  
+Powierzchnia użytkowa: 500 m²
+
+**Salon fryzjerski** w Bielsku-Białej  
+Powierzchnia użytkowa: 200 m²

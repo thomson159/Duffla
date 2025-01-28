@@ -1,0 +1,34 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# **Dom Jednorodzinny Agrestowa – Nowoczesna Zabudowa Bliźniacza**  
+
+Projekt przy ulicy Agrestowej w Bielsku-Białej obejmuje dwa budynki jednorodzinne w zabudowie bliźniaczej, harmonijnie wpisujące się w otoczenie. Nowoczesna forma architektoniczna oraz funkcjonalne wnętrza zapewniają mieszkańcom komfort i wygodę na co dzień.  
+
+Obiekty wyróżniają się przestronnymi układami pomieszczeń oraz dużymi przeszkleniami, które wpuszczają naturalne światło i otwierają wnętrza na otaczającą zieleń. Zintegrowany garaż podziemny pozwala na maksymalne wykorzystanie powierzchni działki, a starannie dobrane materiały podkreślają nowoczesny charakter inwestycji.  
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Bielsko-Biała  
+🏠 **Powierzchnia użytkowa:** 438 m²  
+
+## Wizualizacja
+
+{[1, 2].map((num) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/agrest/${num}.jpg`} />
+    </Zoom>
+    <br/>
+  </>
+))}
+
+## Rysunek
+
+{[3, 4].map((num) => (
+  <>
+    <Zoom>
+      <img style={{ backgroundColor: "white" }} alt="portfolio" src={`/compressed/jedno/agrest/${num}.png`} />
+    </Zoom>
+    <br/>
+  </>
+))}

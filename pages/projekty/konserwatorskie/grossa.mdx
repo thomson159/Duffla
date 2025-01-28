@@ -1,0 +1,95 @@
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
+# **Manufaktura Grossa – Harmonia Historii i Nowoczesności**
+
+Manufaktura Grossa to wyjątkowy projekt konserwatorski, który łączy dziedzictwo przemysłowe Bielska-Białej z nowoczesnymi rozwiązaniami architektonicznymi. Adaptacja i rozbudowa dawnej Fabryki Grossa stanowi przykład umiejętnego zachowania wartości historycznych przy jednoczesnym dostosowaniu obiektu do współczesnych potrzeb użytkowych.
+
+<br />
+
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: "14px",
+  }}
+>
+  {Array.from({ length: 2 }, (_, i) => (
+    <div key={i} style={{}}>
+      <Zoom>
+        <img
+          alt="portfolio"
+          src={`/compressed/kon/${i + 1}.jpg`}
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+            margin: "0 auto",
+            backgroundColor: "white",
+          }}
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>
+
+#### **Historia i kontekst**
+
+Fabryka Grossa to jeden z charakterystycznych budynków przemysłowych Bielska-Białej, sięgający swoimi korzeniami przełomu XIX i XX wieku. Przez lata pełniła funkcję ważnego ośrodka produkcji, wpisując się w bogate tradycje włókiennicze regionu. Po latach eksploatacji i zmianach własnościowych budynek wymagał gruntownej rewitalizacji, by odzyskać swój dawny blask i ponownie stać się częścią miejskiej tkanki.
+
+#### **Nowoczesna adaptacja z szacunkiem dla historii**
+
+Prace nad obiektem miały na celu nie tylko przywrócenie mu dawnej świetności, ale także nadanie nowych funkcji, które wpisują się w dynamicznie rozwijające się miasto. Oryginalna fasada została odrestaurowana z dbałością o detale, a wnętrza zaadaptowano w taki sposób, by zachować ich industrialny charakter, jednocześnie zapewniając komfort i funkcjonalność przyszłym użytkownikom. Istotnym elementem było także wprowadzenie nowoczesnych technologii, które zwiększają efektywność energetyczną budynku i poprawiają jego ergonomię. Dodatkowa rozbudowa harmonijnie współgra z historyczną bryłą, tworząc przestrzeń, która łączy tradycję z nowoczesnością.
+
+#### **Nowe życie dla dawnej fabryki**
+
+Dzięki rewitalizacji Manufaktura Grossa stała się miejscem, które łączy funkcje biznesowe, kulturalne i społeczne. Przestrzenie obiektu mogą pełnić rolę biur, pracowni artystycznych, galerii czy przestrzeni coworkingowej. Wnętrza zachowały industrialny charakter, a ich unikatowa atmosfera przyciąga zarówno przedsiębiorców, jak i miłośników historii i sztuki.
+
+#### **Dane techniczne**
+
+📍 **Lokalizacja**: Bielsko-Biała  
+📏 **Powierzchnia użytkowa**: 7 200 m²  
+🏗 **Zakres prac**: Adaptacja, renowacja, rozbudowa
+
+Manufaktura Grossa to dowód na to, że zabytkowe obiekty przemysłowe mogą zyskać nowe życie, łącząc funkcjonalność i estetykę z szacunkiem dla historii.
+
+<br />
+
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "14px",
+  }}
+>
+  {Array.from({ length: 18 }, (_, i) => (
+    <div
+      key={i}
+      style={{}}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+        transition: "all 0.3s ease-in-out",
+      }}
+    >
+      <Zoom>
+        <img
+          alt="portfolio"
+          src={`/compressed/kon/${i + 3}.jpg`}
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+            margin: "0 auto",
+            backgroundColor: "white",
+            minHeight: 300,
+            objectFit: "cover",
+            transition: "opacity 0.3s ease-in-out",
+          }}
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>

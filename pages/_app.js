@@ -1,4 +1,5 @@
 import '../style/styles.css'
+import '../style/form.css'
 import Script from "next/script";
 import { SessionProvider } from "next-auth/react"
 
