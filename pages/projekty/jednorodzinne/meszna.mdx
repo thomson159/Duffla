@@ -1,0 +1,39 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# **Dom Meszna Pod Skocznią – Elegancja w Górach**
+
+Projekt domu jednorodzinnego „Meszna Pod Skocznią” to przestronny budynek, który doskonale wpasowuje się w malowniczy górski krajobraz. Z powierzchnią użytkową około 373 m², oferuje nie tylko komfort, ale i estetykę. Zaprojektowany z myślą o nowoczesnych potrzebach mieszkańców, łączy funkcjonalność z wysokiej jakości wykończeniem. Budynek charakteryzuje się elegancką, ale jednocześnie prostą formą, która harmonizuje z naturalnym otoczeniem.
+
+Wnętrze domu zostało zaplanowane z myślą o maksymalnej przestronności i komforcie. Dzięki zastosowaniu dużych okien, naturalne światło wypełnia wnętrze, a widok na góry stanowi wyjątkowy element przestrzeni. Garaż podziemny jest praktycznym rozwiązaniem, które pozwala zachować porządek i wygodę na działce, jednocześnie pozostawiając przestrzeń na ogród i tereny rekreacyjne.
+
+Projekt tego domu jest świetnym przykładem nowoczesnej architektury, która nie tylko spełnia funkcje użytkowe, ale także w pełni odpowiada na potrzeby komfortowego życia w górskim otoczeniu.
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Meszna  
+📐 **Powierzchnia użytkowa:** ok. 373 m²  
+
+## Wizualizacja
+
+{Array.from({ length: 3 }, (_, i) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/meszna/${i + 1}.jpg`} />
+    </Zoom>
+    <br/>
+  </>
+))}
+
+## Wnętrze
+
+  {[
+    "4.jpg"
+  ].map((file, index) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/meszna/${file}`} />
+    </Zoom>
+  </>
+))}
+
+[więcej]( /projekty/wnetrza/meszna )

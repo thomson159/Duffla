@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://developers.ledger.com
+Host: https://duffla.pl
 
 # Sitemaps
-Sitemap: https://developers.ledger.com/sitemap.xml
+Sitemap: https://duffla.pl/sitemap.xml

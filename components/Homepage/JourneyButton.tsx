@@ -29,7 +29,8 @@ export const JourneyButton: FC<JourneyButtonProps> = ({hovered, className, ...pr
     >
       <div className="w-max flex gap-4 items-center">
         <span className={`normal-case text-p font-semibold ${textColor} transition-left duration-300 ease-linear`}>
-          Get Started
+          {/* Get Started */}
+          więcej
         </span>
         <img
           src={`/icons/arrow-right-${color}.svg`}

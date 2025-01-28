@@ -1,0 +1,37 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# **Osiedle Architektów – Nowoczesne i Komfortowe Domy Jednorodzinne**  
+
+Osiedle Architektów to starannie zaprojektowany kompleks budynków jednorodzinnych w zabudowie szeregowej i bliźniaczej, łączący funkcjonalność z nowoczesnym designem. Układ osiedla został opracowany tak, aby zapewnić mieszkańcom wygodę, prywatność oraz dostęp do zielonych przestrzeni wspólnych.  
+
+Dzięki przemyślanej architekturze, każdy dom oferuje optymalne wykorzystanie powierzchni, jasne i przestronne wnętrza oraz rozwiązania sprzyjające energooszczędności. Nowoczesne technologie oraz wysokiej jakości materiały gwarantują trwałość i komfort użytkowania na lata.  
+
+Położone w Bielsku-Białej osiedle stanowi idealne miejsce do życia dla rodzin ceniących sobie połączenie nowoczesnej estetyki z funkcjonalnością. Harmonijne otoczenie i dobrze zaplanowana infrastruktura sprawiają, że Osiedle Architektów to przestrzeń, w której można cieszyć się komfortem codziennego życia.  
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Bielsko-Biała  
+🏠 **Powierzchnia użytkowa budynków:** 2 660 m²  
+🌿 **Powierzchnia działki:** 11 882 m²  
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 5 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/archi/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+## Wnętrza
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)', gap: '20px' }}>
+  {Array.from({ length: 1 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/archi/2/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+[więcej]( /projekty/wnetrza/os )

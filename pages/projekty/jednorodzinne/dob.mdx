@@ -1,0 +1,38 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# **Dom Mazańcowice – Komfort i Przestronność dla Rodziny**
+
+Projekt domu jednorodzinnego w Mazańcowicach to elegancka, funkcjonalna przestrzeń stworzona z myślą o komforcie rodzinnym. Zaprojektowany z dbałością o każdy detal, łączy nowoczesny design z tradycyjnymi materiałami, tworząc przyjazną atmosferę. Budynek, o powierzchni użytkowej około 263 m², zapewnia przestronność i wygodę w codziennym użytkowaniu.
+
+W projekcie uwzględniono przemyślane rozmieszczenie pomieszczeń, które zapewniają pełną funkcjonalność. Przestronne pokoje dzienne, jasne wnętrza oraz komfortowe sypialnie stwarzają idealne warunki do życia. Otwarta kuchnia z częścią jadalną umożliwia wspólne spędzanie czasu, a duże okna w salonie doświetlają przestrzeń i otwierają widok na otaczającą przyrodę. 
+
+Dom w Mazańcowicach to projekt, który łączy estetykę z praktycznością, odpowiadając na potrzeby współczesnych mieszkańców, zapewniając komfort i przestronność na co dzień.
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Mazańcowice  
+📐 **Powierzchnia użytkowa:** ok. 263 m²  
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 8 }, (_, i) => (
+    <Zoom key={i}>
+      <img alt="portfolio" src={`/compressed/jedno/dob/${i + 1}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+## Wnętrze
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)', gap: '20px' }}>
+  {[
+    "9.jpg"
+  ].map((file, index) => (
+    <Zoom key={index}>
+      <img alt="portfolio" src={`/compressed/jedno/dob/${file}`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>
+
+[więcej]( /projekty/wnetrza/dob )

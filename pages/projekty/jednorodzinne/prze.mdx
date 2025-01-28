@@ -1,0 +1,15 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Przeździeckiego
+
+<br/>
+
+{Array.from({ length: 2 }, (_, i) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/jedno/prze/${i + 1}.jpg`} />
+    </Zoom>
+    <br/>
+  </>
+))}

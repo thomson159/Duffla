@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-	siteUrl: 'https://developers.ledger.com',
+	siteUrl: 'https://duffla.pl',
 	generateRobotsTxt: true,
 	changefreq: 'weekly'
 }

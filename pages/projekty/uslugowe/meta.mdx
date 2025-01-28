@@ -1,0 +1,49 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# **Hotel „META” w Szczyrku – Luksus i Relaks w Górskim Otoczeniu**
+
+Hotel „META” w Szczyrku to nowoczesny obiekt, który łączy luksusowy wypoczynek z szeroką ofertą usług wellness. Projekt budynku obejmuje przestronny kompleks, w którym znajdują się strefy basenowe, sauny, spa oraz sale sportowe i konferencyjne. Każdy z tych elementów został zaprojektowany z myślą o zapewnieniu najwyższego komfortu i relaksu dla gości, a całość – o zachowanie harmonii z górskim krajobrazem.
+
+Wnętrza hotelu emanują nowoczesnością, jednocześnie tworząc przyjazną, odprężającą atmosferę, idealną do odpoczynku. Część wellness z basenem i saunami stanowi oazę spokoju, gdzie goście mogą zregenerować siły, podczas gdy strefy sportowe i konferencyjne oferują przestronność oraz odpowiednią infrastrukturę do aktywnego wypoczynku lub organizacji wydarzeń. Hotel „META” to miejsce, które spełnia oczekiwania najbardziej wymagających klientów, oferując pełną gamę usług w jednym obiekcie.  
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Szczyrk  
+📐 **Powierzchnia użytkowa:** 4 200 m²   
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {[
+    "1.jpg", "2.jpg", "3.jpg", 
+    "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg"
+  ].map((file) => (
+    <div key={file} style={{ }}>
+      <Zoom>
+        <img 
+          alt="portfolio" 
+          src={`/compressed/uslugowe/meta/${file}`} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} 
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>
+
+## Rysunek
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {[
+    "4.png", "5.png", "6.png"
+  ].map((file) => (
+    <div key={file} style={{ }}>
+      <Zoom>
+        <img 
+          alt="portfolio" 
+          src={`/compressed/uslugowe/meta/${file}`} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} 
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>

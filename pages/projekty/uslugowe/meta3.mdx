@@ -1,0 +1,28 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# **META III Szczyrk – Luksusowy Kompleks Hotelowy w Górach**
+
+Projekt „META III” w Szczyrku to koncepcja nowoczesnego kompleksu hotelowego, który łączy funkcjonalność z luksusem. Z myślą o zapewnieniu najwyższych standardów wypoczynku, budynek zaplanowany został z częścią basenową i spa, oferując gościom przestronność i komfort w każdym detalu. Zastosowanie innowacyjnych rozwiązań architektonicznych i nowoczesnych materiałów pozwoliło na stworzenie obiektu idealnie wkomponowanego w górski krajobraz, a jednocześnie zapewniającego pełną funkcjonalność i wygodę. 
+
+Część wellness, w tym basen i spa, zostały zaprojektowane z myślą o relaksie i regeneracji gości, a duża powierzchnia użytkowa obiektu gwarantuje przestronność zarówno dla osób indywidualnych, jak i grup. Dodatkowo, w kompleksie znajdują się garaże podziemne, co zwiększa komfort parkowania i poruszania się po obiekcie. Projekt „META III” to połączenie nowoczesnego designu z luksusowym wypoczynkiem, które stanowi wyjątkowe miejsce w sercu górskiego kurortu.  
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Szczyrk  
+📐 **Powierzchnia użytkowa:** 11 000 m²  
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num) => (
+    <div key={num} style={{ }}>
+      <Zoom>
+        <img 
+          alt="portfolio" 
+          src={`/compressed/uslugowe/meta3/${num}.jpg`} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} 
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>

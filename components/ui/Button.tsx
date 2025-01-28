@@ -1,8 +1,7 @@
-import { FC, HTMLAttributes } from 'react'
-import { combination } from '../../lib/utils';
-import { useRouter } from 'next/navigation';
-import Image from 'next/image'
-
+import { FC, HTMLAttributes } from "react";
+import { combination } from "../../lib/utils";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface ButtonChildrenProps {
   label: string;
@@ -33,9 +32,12 @@ function ButtonChildren(props: ButtonChildrenProps) {
   return (
     <div className="w-max flex gap-4 items-center">
       <span
-        className={combination(`normal-case text-p font-semibold ${textStyle()} ${
-          disabled ? "" : "transition-left"
-        }`, textClassName)}
+        className={combination(
+          `normal-case text-p font-semibold ${textStyle()} ${
+            disabled ? "" : "transition-left"
+          }`,
+          textClassName
+        )}
       >
         {label}
       </span>
@@ -55,7 +57,9 @@ function ButtonChildren(props: ButtonChildrenProps) {
   );
 }
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, ButtonChildrenProps {
+interface ButtonProps
+  extends HTMLAttributes<HTMLButtonElement>,
+    ButtonChildrenProps {
   label: string;
   type?: "primary" | "secondary" | "withWhiteBorder" | "gray" | "white";
   href?: string;
@@ -67,7 +71,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, ButtonChildrenP
 
 const Button: FC<ButtonProps> = ({
   type = "primary",
-  label, 
+  label,
   href,
   onClick,
   link,
@@ -88,7 +92,12 @@ const Button: FC<ButtonProps> = ({
 
   const color = () => {
     if (disabled) return "black";
-    if (type === "primary" || type === "secondary" || type === "withWhiteBorder") return "white";
+    if (
+      type === "primary" ||
+      type === "secondary" ||
+      type === "withWhiteBorder"
+    )
+      return "white";
     if (type === "gray" || type === "white") return "black";
     return "black";
   };
@@ -97,28 +106,29 @@ const Button: FC<ButtonProps> = ({
 
   const handleClick = () => {
     switch (type) {
-          case "primary":
-            router.push("/docs/dev-tracks/quickstart")
-            break;
-          case "white":
-            router.push("/docs/dev-tracks/community")
-            break;
-          default:
-            break;
-        }
-  }
+      case "primary":
+        router.push("/docs/dev-tracks/quickstart");
+        break;
+      case "white":
+        router.push("/docs/dev-tracks/community");
+        break;
+      default:
+        break;
+    }
+  };
 
   const buttonClasses = combination(
     `group w-max px-6 py-4 rounded-full flex items-center gap-4 ${typeStyles()}`,
     className
   );
-  
+
   return (
     <button
-      type="button"
+      type="submit"
       onClick={handleClick}
       className={buttonClasses}
       disabled={disabled}
+      style={{ marginLeft: "auto", marginRight: "auto" }}
     >
       <ButtonChildren
         label={label}
@@ -130,6 +140,6 @@ const Button: FC<ButtonProps> = ({
       />
     </button>
   );
-}
+};
 
-export default Button
+export default Button;

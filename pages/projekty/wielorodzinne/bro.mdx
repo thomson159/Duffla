@@ -1,0 +1,16 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# Brodzińskiego
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+{Array.from({ length: 6 }, (_, i) => (
+  <>
+    <Zoom>
+      <img alt="portfolio" src={`/compressed/wielo/bro/${i + 1}.jpg`} />
+    </Zoom>
+  </>
+))}
+</div>

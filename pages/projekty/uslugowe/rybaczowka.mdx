@@ -1,0 +1,14 @@
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+# Rybaczówka
+
+<br/>
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}>
+  {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+    <Zoom key={num}>
+      <img alt="portfolio" src={`/compressed/uslugowe/ryba/${num}.jpg`} style={{ width: '100%', height: 'auto' }} />
+    </Zoom>
+  ))}
+</div>

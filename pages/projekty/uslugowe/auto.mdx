@@ -1,0 +1,44 @@
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+# **Warsztat Samochodowy – Przestronny i Funkcjonalny Obiekt**
+
+Projekt warsztatu samochodowego w Bielsku-Białej to przestronny obiekt zaprojektowany z myślą o zapewnieniu efektywnej i wygodnej pracy w branży motoryzacyjnej. Budynek składa się z części warsztatowej, biurowo-socjalnej oraz mieszkalnej, co umożliwia wygodne połączenie działalności zawodowej z codziennym życiem. 
+
+Zastosowanie nowoczesnych rozwiązań technologicznych w projekcie pozwala na płynne funkcjonowanie warsztatu, gdzie przestronność i ergonomia zostały połączone z estetyką i funkcjonalnością. Część biurowo-socjalna stanowi idealne miejsce do zarządzania działalnością oraz odpoczynku pracowników, a część mieszkalna daje możliwość komfortowego zamieszkania w bezpośredniej bliskości miejsca pracy. Całość projektu zapewnia wysoką efektywność i wygodę, tworząc przestrzeń dostosowaną do potrzeb właścicieli i pracowników warsztatu. 
+
+### **📌 Dane techniczne**  
+📍 **Lokalizacja:** Bielsko-Biała  
+📐 **Powierzchnia użytkowa:** 480 m²  
+
+## Wizualizacja
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {Array.from({ length: 12 }, (_, i) => (
+    <div key={i} style={{ }}>
+      <Zoom>
+        <img 
+          alt="portfolio" 
+          src={`/compressed/uslugowe/auto/${i + 1}.jpg`} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} 
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>
+
+## Rysunek
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px' }}>
+  {[12, 13, 14].map((i) => (
+    <div key={i} style={{ }}>
+      <Zoom>
+        <img 
+          alt="portfolio" 
+          src={`/compressed/uslugowe/auto/${i + 1}.jpg`} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto', backgroundColor: 'white' }} 
+        />
+      </Zoom>
+    </div>
+  ))}
+</div>
