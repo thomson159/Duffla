@@ -183,10 +183,22 @@ code {
   @apply text-p-tag font-semibold uppercase;
 }
 
-.toc {
-  max-width: '100px' !important;
+
+/* ////////////////////// */
+
+/* .toc {
+  max-width: '100px'!important;
 }
 
 .toc-container {
-  max-width: '100px' !important;
+  max-width: '100px'!important;
+} */
+
+/* .bg-black {
+  min-height: 60vh!important;
+} */
+
+.nextra-toc {
+  /* display: none!important; */
+  width: 100px!important;
 }

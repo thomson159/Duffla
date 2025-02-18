@@ -10,7 +10,7 @@ interface HeroProps {
 
 export const Hero = ({ journeyId }: HeroProps) => {
   return (
-    <div className="bg-black">
+    <div className="bg-black" style={{ minHeight: "54vh" }}>
       {/* md:bg-hero-background */}
       <div className="relative max-w-[1440px] mx-auto bg-contain md:bg-hero-background bg-no-repeat bg-right">
         <div className="pb-20 md:py-20 px-4 md:px-28" id="home">
