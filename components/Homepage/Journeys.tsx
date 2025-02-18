@@ -7,7 +7,7 @@ export const Journeys = () => {
     <div>
       <ImageGallery/>
     </div>
-    <div className="relative bg-[url('/homepage/abstract-textured-backgound.jpg')] bg-cover">
+    <div className="relative bg-cover">
       <div className="max-w-[1440px] mx-auto">
         <div className="relative py-20 px-4 md:px-28 z-10">
           <div
@@ -59,7 +59,7 @@ export const Journeys = () => {
             />
 
             <div className="text-heading-6 md:text-heading-5 tracking-tight-3 font-semibold w-full">
-              a także
+              {/* a także */}
             </div>
 
             <JourneyCard
