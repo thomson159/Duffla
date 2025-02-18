@@ -41,9 +41,10 @@ const config: DocsThemeConfig = {
   feedback: { content: null },
   editLink: { component: null },
   toc: {
-    extraContent: () => {
-      return <Copy />;
-    },
+    // extraContent: () => {
+    //   return <Copy />;
+    // },
+    float: false,
   },
   head: function Head() {
     const { asPath } = useRouter();
