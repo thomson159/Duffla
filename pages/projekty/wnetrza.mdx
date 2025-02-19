@@ -1,5 +1,4 @@
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
+import React from "react";
 
 # Wnętrza
 
@@ -49,13 +48,23 @@ Każde wnętrze to historia – tworzymy przestrzenie, które inspirują i wyra�
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
+          padding: "10px",
+          borderRadius: "8px",
+          transition: "all 0.3s ease-in-out",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.2)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.boxShadow = "none";
         }}
       >
-        <a href={project.link} style={{ textDecoration: 'none' }}>
+        <a href={project.link} style={{ textDecoration: "none" }}>
           <h3
             style={{
               fontSize: 18,
               width: "100%",
+              transition: "color 0.3s",
             }}
           >
             {project.title}
@@ -67,11 +76,13 @@ Każde wnętrze to historia – tworzymy przestrzenie, które inspirują i wyra�
               width: "100%",
               minHeight: 300,
               objectFit: "cover",
+              transition: "opacity 0.3s ease-in-out",
             }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.6")}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
           />
         </a>
       </div>
     ))}
   </div>
 </div>
-

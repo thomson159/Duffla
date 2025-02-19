@@ -81,6 +81,15 @@ Tworzymy obiekty usługowe, które wspierają sukces Twojej firmy dzięki innowa
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
+          padding: "10px",
+          borderRadius: "8px",
+          transition: "all 0.3s ease-in-out",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.2)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.boxShadow = "none";
         }}
       >
         <a href={project.link} style={{ textDecoration: "none" }}>
@@ -88,6 +97,7 @@ Tworzymy obiekty usługowe, które wspierają sukces Twojej firmy dzięki innowa
             style={{
               fontSize: 18,
               width: "100%",
+              transition: "color 0.3s",
             }}
           >
             {project.title}
@@ -95,7 +105,7 @@ Tworzymy obiekty usługowe, które wspierają sukces Twojej firmy dzięki innowa
           <div
             style={{
               width: "100%",
-              height: "300px" /* Stała wysokość dla spójnego wyglądu */,
+              height: "300px",
               overflow: "hidden",
               display: "flex",
               alignItems: "center",
@@ -106,11 +116,18 @@ Tworzymy obiekty usługowe, które wspierają sukces Twojej firmy dzięki innowa
               alt={project.title}
               src={`/compressed/uslugowe/${project.image}`}
               style={{
-                // width: "100%",
-                // height: "100%",
                 width: "100%",
                 minHeight: 300,
                 objectFit: "cover",
+                transition: "opacity 0.3s ease-in-out, transform 0.3s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = "0.8";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = "1";
+                e.currentTarget.style.transform = "scale(1)";
               }}
             />
           </div>
