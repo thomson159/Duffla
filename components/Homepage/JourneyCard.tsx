@@ -81,6 +81,7 @@ export const JourneyCard: FC<JourneyCardProps> = ({
     >
       <div className="relative w-full h-[160px] sm:h-[160px] md:h-[110px] lg:h-[150px] xl:h-[160px] overflow-hidden duration-300 ease-linear">
         <Image
+          style={{ width: "100%" }}
           src={require(`../../public/homepage/bg-${type}.jpg`)}
           alt="type"
           className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] group-hover:scale-110 duration-300 ease-linear"

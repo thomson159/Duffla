@@ -10,7 +10,6 @@ export const Examples = () => {
             className="text-heading-5 md:text-heading-3 tracking-tight-3 font-semibold"
             id="api"
           >
-            {/* They chose security, they chose Ledger */}
             {/* Nasi Partnerzy */}
           </div>
         </div>
@@ -20,7 +19,6 @@ export const Examples = () => {
         <Carousel />
         <div className="absolute h-24 w-10 md:w-44 lg:w-96 right-0 top-0 bg-black-gradient-right z-10" />
       </div>
-
       <div className="max-w-[1440px] mx-auto -mt-4 md:mt-0">
         <div className="relative pb-20 px-4 md:px-28 z-10">
           <div className="flex flex-wrap gap-8 mt-16 justify-center items-center md:items-stretch md:justify-normal">
@@ -45,54 +43,12 @@ export const Examples = () => {
               description="Profesjonalizm, precyzyjność i zaangażowanie – to słowa, które najlepiej opisują naszą współpracę z tym architektem. Już na etapie planowania czuliśmy się pewnie, wiedząc, że nasz projekt jest w rękach specjalisty. Efekt końcowy jest niesamowity – architekt stworzył dla nas przestrzeń, która doskonale odpowiada naszym wymaganiom, a do tego jest piękna i funkcjonalna."
               type="live-app"
             />
-            {/* <ExampleCard
-              icon="coinbase"
-              title="Coinbase Wallet"
-              subtitle="Use Coinbase Wallet with your Ledger"
-              description="Coinbase Wallet's browser extension is compatible with Ledger hardware wallets, providing an additional layer of security and greater peace of mind"
-              type="interaction"
-            />
-            <ExampleCard
-              icon="moonpay-purple"
-              title="MoonPay"
-              subtitle="Buying crypto straight to your Ledger"
-              description="MoonPay was integrated into Ledger Live, and allows assets to be directly deposited and secured in Ledger devices"
-              type="live-app"
-            />
-            <ExampleCard
-              icon="lido"
-              title="Lido"
-              subtitle="Staking ETH on Ledger Live"
-              description="The LIDO dAPP was integrated into the Ledger Live ecosystem and improved security by providing clear-signing to Ledger users"
-              type="live-app"
-            /> */}
-            {/* <ExampleCard 
-              icon="solana" 
-              title="Solana"
-              subtitle="Managing and staking  SOL on Ledger Live"
-              description="Solana built and designed the Ledger application and Ledger Live interface, providing its userbase with state-of-the-art security and experience" 
-              type="blockchain"
-            />
-            <ExampleCard 
-              icon="objkt" 
-              title="Objkt"
-              subtitle="Neat connection to Objkt"
-              description="Securely display your NFT collections directly within Ledger Live, for a neat and easy visualisation experience" 
-              type="live-app"
-            />
-            <ExampleCard 
-              icon="cosmos" 
-              title="Cosmos"
-              subtitle="Into the Cosmos with Ledger"
-              description="Cosmos is fully compatible with Ledger making it easy to support any Cosmos chains on the suite of Ledger products" 
-              type="blockchain"
-            /> */}
             <div className="md:hidden w-full text-p text-grey-500 mt-4">
-              I wiele więcej...
+              {/* I wiele więcej... */}
             </div>
           </div>
           <div className="hidden md:block text-p text-grey-500 text-right mt-4">
-            I wiele więcej...
+            {/* I wiele więcej... */}
           </div>
         </div>
       </div>

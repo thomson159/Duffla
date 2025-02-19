@@ -193,16 +193,20 @@ const Form: React.FC = () => {
           </div>
           <div className="input-wrap" style={{
             textAlign: "center",
+            width: "100%",
+            alignItems: "center"
           }}>
             {/* <button id="confirm" type="submit">
               Wyślij
             </button> */}
             <Button
+              id="confirm"
               label="Wyślij"
               type="secondary"
               svgIcon="arrow-external"
               style={{
-                // marginLeft: "auto",
+                marginLeft: "auto",
+                float: "right"
               }}
             />
           </div>
