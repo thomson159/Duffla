@@ -1,10 +1,10 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
-import { useRouter } from "next/router";
-import { useConfig } from "nextra-theme-docs";
-import { Copy } from "./components/features/copy-page-url";
+// import { useRouter } from "next/router";
+// import { useConfig } from "nextra-theme-docs";
+// import { Copy } from "./components/features/copy-page-url";
 // import DocslyClient from "./components/DocslyClient";
-import AuthButton from "./auth-button";
+// import AuthButton from "./auth-button";
 import { Footer } from "./components/Homepage/Footer";
 
 const config: DocsThemeConfig = {
@@ -47,33 +47,32 @@ const config: DocsThemeConfig = {
     float: false,
   },
   head: function Head() {
-    const { asPath } = useRouter();
-    const config = useConfig();
+    // const { asPath } = useRouter();
+    // const config = useConfig();
 
-    const pageTitle = config.frontMatter.title || config.title;
+    // const pageTitle = config.frontMatter.title || config.title;
 
     const siteTitle = "Duffla";
     const title = siteTitle;
 
-    const url = `https://developers.ledger.com${asPath}`;
-    const description =
-      "All the tools and documentation," + "to integrate with Ledger";
+    // const url = `https://developers.ledger.com${asPath}`;
+    // const description =
+    //   "All the tools and documentation," + "to integrate with Ledger";
 
     return (
       <>
         <title>{title}</title>
         <meta name="robots" content="index,follow" />
-        <meta name="description" content={description} />
-
-        <meta property="og:title" content={pageTitle} />
+        <meta name="description" content={"Tworzymy przestrzeń, która inspiruje."} />
+        <meta property="og:title" content={"Duffla.pl"} />
         <meta property="og:site_name" content={siteTitle} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
-        <meta property="og:image" content="/homepage/bg-interaction.jpg" />
+        <meta property="og:description" content={"Tworzymy przestrzeń, która inspiruje."} />
+        {/* <meta property="og:url" content={url} /> */}
+        <meta property="og:image" content="/compressed/uslugowe/meta3/4.jpg" />
         {/* <meta property="og:locale" content="en_US" /> */}
         <meta property="og:locale" content="pl_PL" />
 
-        <link rel="canonical" href="https://developers.ledger.com" />
+        {/* <link rel="canonical" href="https://developers.ledger.com" /> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </>
@@ -92,7 +91,8 @@ const config: DocsThemeConfig = {
         src={`/icons/Duffla.svg`}
         className=""
         style={{
-          minWidth: 80,
+          // minWidth: 80,
+          maxWidth: 64,
         }}
         alt="logo icon"
       />
@@ -104,10 +104,10 @@ const config: DocsThemeConfig = {
       </span> */}
     </>
   ),
-  faviconGlyph: "💻",
-  navbar: {
-    extraContent: <AuthButton />,
-  },
+  faviconGlyph: "🏘",
+  // navbar: {
+  //   // extraContent: <AuthButton />,
+  // },
 };
 
 export default config;
