@@ -13,27 +13,27 @@ export default {
     items: {
       uslugowe: {
         type: "page",
-        title: "Obiekty Usługowe",
+        title: "Usługowe",
         href: "/projekty/uslugowe",
       },
       przemyslowe: {
         type: "page",
-        title: "Obiekty Przemysłowe",
+        title: "Przemysłowe",
         href: "/projekty/przemyslowe",
       },
       konserwatorskie: {
         type: "page",
-        title: "Obiekty Konserwatorskie",
+        title: "Konserwatorskie",
         href: "/projekty/konserwatorskie",
       },
       jednorodzinne: {
         type: "page",
-        title: "Mieszkaniowe Jednorodzinne",
+        title: "Jednorodzinne",
         href: "/projekty/jednorodzinne",
       },
       wielorodzinne: {
         type: "page",
-        title: "Mieszkaniowe Wielorodzinne",
+        title: "Wielorodzinne",
         href: "/projekty/wielorodzinne",
       },
       wnetrza: {

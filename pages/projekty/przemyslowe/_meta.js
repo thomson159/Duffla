@@ -1,7 +1,7 @@
 export default {
-  hala: "Hala produkcyjna I",
-  hala2: "Hala produkcyjna II",
-  hala3: "Hala produkcyjna III",
+  hala: "Andrychów",
+  hala2: "Bielsko-Biała I",
+  hala3: "Bielsko-Biała II",
   kopanka: "Kopanka Skawina",
   slowacja: "Słowacja"
 };

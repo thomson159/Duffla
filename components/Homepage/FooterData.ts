@@ -37,27 +37,27 @@ export const FooterData: FooterDataType = [
     name: "Projekty",
     links: [
       {
-        label: "Obiekty Usługowe",
+        label: "Usługowe",
         link: "/projekty/uslugowe",
         scrollLink: null,
       },
       {
-        label: "Obiekty Przemyslowe",
+        label: "Przemysłowe",
         link: "/projekty/przemyslowe",
         scrollLink: null,
       },
       {
-        label: "Obiekty Konserwatorskie",
+        label: "Konserwatorskie",
         link: "/projekty/konserwatorskie",
         scrollLink: null,
       },
       {
-        label: "Mieszkaniowe Wielorodzinne",
-        link: "/projekty/przemyslowe",
+        label: "Wielorodzinne",
+        link: "/projekty/wielorodzinne",
         scrollLink: null,
       },
       {
-        label: "Mieszkaniowe Jednorodzinne",
+        label: "Jednorodzinne",
         link: "/projekty/jednorodzinne",
         scrollLink: null,
       },

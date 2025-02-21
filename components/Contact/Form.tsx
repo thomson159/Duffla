@@ -178,7 +178,7 @@ const Form: React.FC = () => {
             ></textarea>
           </div>
           <div className="input-wrap">
-            <input required type="checkbox" id="d" />
+            <input required type="checkbox" id="d" style={{ marginTop: 3 }} />
             <label htmlFor="d" style={{ paddingLeft: 10, paddingTop: 2 }}>
               Akceptuje{" "}
               <a
@@ -191,11 +191,14 @@ const Form: React.FC = () => {
               </a>
             </label>
           </div>
-          <div className="input-wrap" style={{
-            textAlign: "center",
-            width: "100%",
-            alignItems: "center"
-          }}>
+          <div
+            className="input-wrap"
+            style={{
+              textAlign: "center",
+              width: "100%",
+              alignItems: "center",
+            }}
+          >
             {/* <button id="confirm" type="submit">
               Wyślij
             </button> */}
@@ -206,7 +209,7 @@ const Form: React.FC = () => {
               svgIcon="arrow-external"
               style={{
                 marginLeft: "auto",
-                float: "right"
+                float: "right",
               }}
             />
           </div>
