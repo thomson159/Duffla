@@ -14,8 +14,8 @@ export default {
   konserwatorskie: {
     title: "Konserwatorskie",
   },
-  jednorodzinne: "Mieszkaniowe Jednorodzinne",
-  wielorodzinne: "Mieszkaniowe Wielorodzinne",
+  jednorodzinne: "Jednorodzinne",
+  wielorodzinne: "Wielorodzinne",
   wnetrza: "Wnętrza",
   urbanistyka: {
     title: "Urbanistyka",

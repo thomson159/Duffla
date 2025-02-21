@@ -1,5 +1,5 @@
 export default {
-  meta: "Hotel „META” w Szczyrku",
+  meta: "Hotel META Szczyrku",
   meta3: "META III Szczyrk",
   auto: "Warsztat samochodowy",
   biuro: "Biuro",
