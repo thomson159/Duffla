@@ -1,12 +1,10 @@
 export default {
   "---": {
-    title: "Obiekty",
+    title: "Projekty",
     type: "separator",
   },
   uslugowe: {
-    // type: "menu",
     title: "Usługowe",
-    // href: "/projekty/uslugowe",
   },
   przemyslowe: {
     title: "Przemysłowe",

@@ -15,17 +15,17 @@ export default NextAuth({
   //     clientSecret: process.env.GITHUB_SECRET,
   //   })
   // ],
-  callbacks: {
-    // jwt({ token, user }) {
-    //   if(user) token.role = user.role
-    //   return token
-    // },
-    // session({ session, token }) {
-    //   session.user.role = token.role
-    //   return session
-    // },
-    async redirect({ url, baseUrl }) {
-      return baseUrl;
-    },
-  },
+  // callbacks: {
+  //   // jwt({ token, user }) {
+  //   //   if(user) token.role = user.role
+  //   //   return token
+  //   // },
+  //   // session({ session, token }) {
+  //   //   session.user.role = token.role
+  //   //   return session
+  //   // },
+  //   async redirect({ url, baseUrl }) {
+  //     return baseUrl;
+  //   },
+  // },
 });

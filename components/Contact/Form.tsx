@@ -182,7 +182,7 @@ const Form: React.FC = () => {
             <label htmlFor="d" style={{ paddingLeft: 10, paddingTop: 2 }}>
               Akceptuje{" "}
               <a
-                href="https://docs.google.com/document/d/1O61mDrXCrHihsXu6SbYX0iL_ofZzOibFagUPYxojjO4/edit?usp=sharing"
+                href="/policy"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "blue" }}

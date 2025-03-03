@@ -6,6 +6,10 @@ export default {
       layout: "raw",
     },
   },
+  policy: {
+    display: "hidden",
+    href: "/policy",
+  },
   projekty: {
     type: "menu",
     title: "Projekty",

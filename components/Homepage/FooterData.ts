@@ -13,7 +13,7 @@ export const FooterData: FooterDataType = [
       },
       {
         label: "Polityka Prywatności",
-        link: "https://docs.google.com/document/d/1O61mDrXCrHihsXu6SbYX0iL_ofZzOibFagUPYxojjO4/edit?usp=sharing",
+        link: "/policy",
         scrollLink: null,
       },
     ]
