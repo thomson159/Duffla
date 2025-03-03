@@ -19,3 +19,7 @@ This project is licensed under the MIT License.
 ## Code Base
 
 This project is based on the source code from [developers.ledger.com](https://developers.ledger.com/).
+
+## Authors
+
+[@thomson159](https://github.com/thomson159)
