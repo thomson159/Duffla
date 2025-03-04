@@ -16,6 +16,10 @@ Then, run `npm run dev` to start the development server and visit `localhost:300
 
 This project is based on the source code from [developers.ledger.com](https://developers.ledger.com/).
 
+## Contact
+
+🚀@✉️.gg
+
 ## Authors
 
 [@thomson159](https://github.com/thomson159)
