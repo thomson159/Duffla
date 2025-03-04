@@ -37,7 +37,7 @@ export const Explore = ({ journeyId }: ExploreProps) => {
               }}
             >
               <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyE58rm0Gv3xTuVaAWkjd-bCkT2azMy44&q=ul.+Listopadowa+56,+43-300+Bielsko-Biała"
+                src=""
                 // width="1000"
                 height="200"
                 // style="border:0;"
