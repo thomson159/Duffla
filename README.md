@@ -12,10 +12,6 @@ First, run `npm install` to install the dependencies.
 
 Then, run `npm run dev` to start the development server and visit `localhost:3000`.
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Code Base
 
 This project is based on the source code from [developers.ledger.com](https://developers.ledger.com/).
