@@ -1,112 +1,90 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import $ from "jquery";
 import Button from "../ui/Button";
-// import { AccountCircle, Email, Message } from "@material-ui/icons";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Form: React.FC = () => {
   useEffect(() => {
     $(".input").on("focus blur", function (this: HTMLInputElement) {
-      const $this = $(this);
+      const $this = $(this),
+        hasValue = $this.val().length > 0,
+        isFocused = $(".input").is(":focus");
 
-      // @ts-ignore
-      if ($this.val().length > 0 || $(".input").is(":focus")) {
-        $this.siblings().addClass("active");
-        $this.parent().addClass("active");
-      } else {
-        $this.siblings().removeClass("active").addClass("not");
-        $this.parent().removeClass("active").addClass("not");
-      }
+      $this
+        .siblings()
+        .toggleClass("active", hasValue || isFocused)
+        .toggleClass("not", !hasValue && !isFocused);
+      $this
+        .parent()
+        .toggleClass("active", hasValue || isFocused)
+        .toggleClass("not", !hasValue && !isFocused);
 
-      if (
-        // @ts-ignore
-        ($this.val().length < 2 &&
-          $(".input").is(":focus") != true &&
-          $this.is(":invalid")) ||
-        ($this.is(":invalid") && $(".input").is(":focus") != true)
-      ) {
-        $this.parent().addClass("invalid");
-        $this.siblings().addClass("invalid");
-      } else {
-        $this.parent().removeClass("invalid");
-        $this.siblings().removeClass("invalid");
-      }
-
-      if (
-        // @ts-ignore
-        $this.val().length > 0 &&
-        $this.is(":valid") &&
-        $(".input").is(":focus") != true
-      ) {
-        $this.parent().addClass("valid");
-        $this.siblings().addClass("valid");
-      } else {
-        $this.parent().removeClass("valid");
-        $this.siblings().removeClass("valid");
-      }
+      const isInvalid =
+        ($this.val().length < 2 || $this.is(":invalid")) && !isFocused;
+      $this
+        .siblings()
+        .add($this.parent())
+        .toggleClass("invalid", isInvalid)
+        .toggleClass("valid", !isInvalid && hasValue && $this.is(":valid"));
     });
 
-    $("#d").change(enableBtn);
-    $(".input").blur(enableBtn);
+    const enableBtn = () => {
+      $("#confirm").prop(
+        "disabled",
+        !$("#d").is(":checked") ||
+          $(".input-wrap.invalid").length > 0 ||
+          $(".input").val().length < 2
+      );
+    };
 
-    function enableBtn() {
-      if (
-        $("#d").is(":checked") == false ||
-        $(".input").parent(".input-wrap").hasClass("invalid") == true ||
-        // @ts-ignore
-        $(".input").val().length < 2
-      ) {
-        // $("#confirm").prop("disabled", true);
-      } else {
-        $("#confirm").prop("disabled", false);
-      }
-    }
-    enableBtn();
-
-    $("#confirm").click(function () {
-      $("form").submit(function (event) {
+    $("#d, .input").on("change blur", enableBtn);
+    $("#confirm").click(() => {
+      $("form").submit((e) => {
         $(".card").addClass("end");
         $(".ending").addClass("showed");
-        event.preventDefault();
+        e.preventDefault();
       });
     });
+
+    enableBtn();
   }, []);
 
-  const backgroundStyle = {
-    // backgroundImage: `url(https://images.pexels.com/photos/6805149/pexels-photo-6805149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
-
   const form = useRef();
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     "service_o8geb3j",
-    //     "template_zoixkcf",
-    //     // @ts-ignore
-    //     form.current,
-    //     "eSz_GZMKvVtJvnGWk"
-    //   )
-    //   .then(
-    //     () => {
-    //       console.log("OK");
-    //       // @ts-ignore
-    //       form.current.reset();
-    //     },
-    //     (e: any) => {
-    //       console.error(e);
-    //     }
-    //   );
+    if (!captchaValue) {
+      alert("Potwierdź, że nie jesteś robotem!");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_o8geb3j",
+        "template_zoixkcf",
+        // @ts-ignore
+        form.current,
+        "eSz_GZMKvVtJvnGWk"
+      )
+      .then(
+        () => {
+          console.log("OK");
+          // @ts-ignore
+          form.current.reset();
+        },
+        (e: any) => {
+          console.error(e);
+        }
+      );
   };
 
   return (
-    <div className="formbody" style={backgroundStyle}>
+    <div className="formbody">
       <div className="card">
         <form
           // @ts-ignore
@@ -122,10 +100,6 @@ const Form: React.FC = () => {
               htmlFor="a"
               style={{ marginTop: "-25px", minWidth: 62, whiteSpace: "none" }}
             >
-              {/* <AccountCircle
-                className={"svgIcon myIcon material-icons"}
-                style={{ marginRight: 10, maxWidth: 18 }}
-              /> */}
               Tytuł
             </label>
             <input
@@ -142,10 +116,6 @@ const Form: React.FC = () => {
               htmlFor="b"
               style={{ marginTop: "-25px", minWidth: 74, whiteSpace: "none" }}
             >
-              {/* <Email
-                className={"svgIcon myIcon material-icons"}
-                style={{ marginRight: 10, maxWidth: 18 }}
-              /> */}
               E-mail
             </label>
             <input
@@ -162,10 +132,6 @@ const Form: React.FC = () => {
               htmlFor="c"
               style={{ marginTop: "-25px", minWidth: 112, whiteSpace: "none" }}
             >
-              {/* <Message
-                className={"svgIcon myIcon material-icons"}
-                style={{ marginRight: 10, maxWidth: 18 }}
-              /> */}
               Wiadomość
             </label>
             <textarea
@@ -177,20 +143,31 @@ const Form: React.FC = () => {
               required
             ></textarea>
           </div>
-          <div className="input-wrap">
-            <input required type="checkbox" id="d" style={{ marginTop: 3 }} />
+          <div
+            className="input-wrap"
+            style={{
+              marginBottom: 20,
+            }}
+          >
+            <input required type="checkbox" id="d" />
             <label htmlFor="d" style={{ paddingLeft: 10, paddingTop: 2 }}>
               Akceptuje{" "}
               <a
                 href="/policy"
                 target="_blank"
                 rel="noreferrer"
-                style={{ color: "blue" }}
+                style={{ color: "#9ae721" }}
               >
                 politykę prywatności
               </a>
             </label>
           </div>
+
+          <ReCAPTCHA
+            sitekey="YOUR_RECAPTCHA_SITE_KEY"
+            onChange={(value) => setCaptchaValue(value)}
+          />
+
           <div
             className="input-wrap"
             style={{
@@ -205,7 +182,7 @@ const Form: React.FC = () => {
             <Button
               id="confirm"
               label="Wyślij"
-              type="secondary"
+              type="primary"
               svgIcon="arrow-external"
               style={{
                 marginLeft: "auto",

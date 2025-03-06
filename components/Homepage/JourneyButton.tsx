@@ -1,35 +1,42 @@
-import { useState, useEffect, FC, HTMLAttributes } from 'react'
-import Image from 'next/image'
-
+import { useState, useEffect, FC, HTMLAttributes } from "react";
 
 interface JourneyButtonProps extends HTMLAttributes<HTMLDivElement> {
   hovered: boolean;
 }
 
-export const JourneyButton: FC<JourneyButtonProps> = ({hovered, className, ...props}) => {  
-  const [color, setColor] = useState<"black" | "white">("white")
-  const [textColor, setTextColor] = useState<"text-black" | "text-white">("text-white")
-  const [containerStyles, setContainerStyles] = useState<string>("border border-white")
+export const JourneyButton: FC<JourneyButtonProps> = ({
+  hovered,
+  className,
+  ...props
+}) => {
+  const [color, setColor] = useState<"black" | "white">("white");
+  const [textColor, setTextColor] = useState<"text-black" | "text-white">(
+    "text-white"
+  );
+  const [containerStyles, setContainerStyles] = useState<string>(
+    ""
+  );
 
   useEffect(() => {
     if (hovered) {
-      setColor("black")
-      setTextColor("text-black")
-      setContainerStyles("bg-white border border-white")
+      setColor("white");
+      setTextColor("text-white");
+      setContainerStyles("");
     } else {
-      setColor("white")
-      setTextColor("text-white")
-      setContainerStyles("border border-white")
+      setColor("white");
+      setTextColor("text-white");
+      setContainerStyles("");
     }
-  }, [hovered])
+  }, [hovered]);
 
   return (
     <div
-      className={`group w-max px-6 py-4 rounded-full flex items-center gap-4 ${containerStyles}`}
+      className={`group w-max px-6 py-4 flex items-center gap-4 ${containerStyles}`}
     >
       <div className="w-max flex gap-4 items-center">
-        <span className={`normal-case text-p font-semibold ${textColor} transition-left duration-300 ease-linear`}>
-          {/* Get Started */}
+        <span
+          className={`normal-case text-p font-semibold ${textColor} transition-left duration-300 ease-linear`}
+        >
           więcej
         </span>
         <img
@@ -39,5 +46,5 @@ export const JourneyButton: FC<JourneyButtonProps> = ({hovered, className, ...pr
         />
       </div>
     </div>
-  )
-}
+  );
+};
