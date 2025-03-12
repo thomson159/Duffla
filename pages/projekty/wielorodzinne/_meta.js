@@ -1,9 +1,9 @@
 export default {
-  marcin: "Marcinkowskiego",
-  bystra: "Bystra",
-  sos: "Sosnowiec",
-  maja: "1 Maja",
-  bro: "Brodzińskiego",
-  konwa: "Konwaliowa",
-  krzem: "Krzemienna",
+  marcin: "MARCINKOWSKIEGO",
+  bystra: "BYSTRA",
+  sos: "SOSNOWIEC",
+  maja: "1 MAJA",
+  bro: "BRODZIŃSKIEGO",
+  konwa: "KONWALIOWA",
+  krzem: "KRZEMIENNA",
 };

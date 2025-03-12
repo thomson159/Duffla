@@ -35,7 +35,7 @@ export const Hero = ({ journeyId }: HeroProps) => {
             <div className="absolute w-full h-32 bottom-0 left-0 bg-black-gradient-bottom" />
           </div>
           <div className="hide-on-mobile">
-            <Image src={Logo} alt="logo" style={{ maxWidth: 159.79 }} />
+            <Image src={Logo} alt="logo" style={{ maxWidth: 186.61 }} />
           </div>
 
           <div style={{ position: "absolute", bottom: 0 }}>
@@ -45,7 +45,7 @@ export const Hero = ({ journeyId }: HeroProps) => {
               </p>
             </div>
             <Button
-              label="Odkrywaj"
+              label="ODKRYWAJ"
               link={journeyId}
               svgIcon="arrow-right"
               type="primary"

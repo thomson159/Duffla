@@ -1,4 +1,4 @@
 export default {
-  golf: "Pole golfowe",
-  lowisko: "Łowisko wędkarskie"
+  golf: "POLE GOLFOWE",
+  lowisko: "ŁOWISKO WĘDKARSKIE"
 };
