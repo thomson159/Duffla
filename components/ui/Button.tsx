@@ -82,7 +82,7 @@ const Button: FC<ButtonProps> = ({
   textClassName = "",
 }) => {
   const typeStyles = () => {
-    if (type === "primary") return "!bg-primary text-white";
+    if (type === "primary") return "!bg-primary text-white my-button-hover";
     if (type === "secondary") return "!bg-black text-white";
     if (type === "withWhiteBorder") return "border border-white";
     if (type === "gray") return "!bg-gray-400 text-black";
@@ -106,19 +106,19 @@ const Button: FC<ButtonProps> = ({
 
   const handleClick = () => {
     switch (type) {
-      case "primary":
-        router.push("/docs/dev-tracks/quickstart");
-        break;
-      case "white":
-        router.push("/docs/dev-tracks/community");
-        break;
+      // case "primary":
+      //   router.push("/docs/dev-tracks/quickstart");
+      //   break;
+      // case "white":
+      //   router.push("/docs/dev-tracks/community");
+      //   break;
       default:
         break;
     }
   };
 
   const buttonClasses = combination(
-    `group w-max px-6 py-4 rounded-full flex items-center gap-4 ${typeStyles()}`,
+    `group w-max px-6 py-4 flex items-center gap-4 ${typeStyles()}`,
     className
   );
 

@@ -1,8 +1,6 @@
-import { FC, HTMLAttributes } from 'react'
+import { FC, HTMLAttributes } from "react";
 import { Link } from "react-scroll";
-import { combination } from '../../lib/utils';
-import Image from 'next/image'
-
+import { combination } from "../../lib/utils";
 
 interface ButtonChildrenProps {
   label: string;
@@ -33,9 +31,12 @@ function ButtonChildren(props: ButtonChildrenProps) {
   return (
     <div className="w-max flex gap-4 items-center">
       <span
-        className={combination(`normal-case text-p font-semibold ${textStyle()} ${
-          disabled ? "" : "transition-left"
-        }`, textClassName)}
+        className={combination(
+          `normal-case text-p font-semibold ${textStyle()} ${
+            disabled ? "" : "transition-left"
+          }`,
+          textClassName
+        )}
       >
         {label}
       </span>
@@ -55,7 +56,9 @@ function ButtonChildren(props: ButtonChildrenProps) {
   );
 }
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, ButtonChildrenProps {
+interface ButtonProps
+  extends HTMLAttributes<HTMLButtonElement>,
+    ButtonChildrenProps {
   label: string;
   type?: "primary" | "secondary" | "withWhiteBorder" | "gray" | "white";
   href?: string;
@@ -67,7 +70,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement>, ButtonChildrenP
 
 const Button: FC<ButtonProps> = ({
   type = "primary",
-  label, 
+  label,
   href,
   onClick,
   link,
@@ -78,7 +81,7 @@ const Button: FC<ButtonProps> = ({
   textClassName = "",
 }) => {
   const typeStyles = () => {
-    if (type === "primary") return "!bg-primary text-white";
+    if (type === "primary") return "!bg-primary text-white my-button-hover";
     if (type === "secondary") return "!bg-black text-white";
     if (type === "withWhiteBorder") return "border border-white";
     if (type === "gray") return "!bg-gray-400 text-black";
@@ -88,13 +91,18 @@ const Button: FC<ButtonProps> = ({
 
   const color = () => {
     if (disabled) return "black";
-    if (type === "primary" || type === "secondary" || type === "withWhiteBorder") return "white";
+    if (
+      type === "primary" ||
+      type === "secondary" ||
+      type === "withWhiteBorder"
+    )
+      return "white";
     if (type === "gray" || type === "white") return "black";
     return "black";
   };
 
   const buttonClasses = combination(
-    `group w-max px-6 py-4 rounded-full flex items-center gap-4 ${typeStyles()}`,
+    `group w-max px-6 py-4 flex items-center gap-4 ${typeStyles()}`,
     className
   );
 
@@ -157,9 +165,7 @@ const Button: FC<ButtonProps> = ({
   }
 
   return (
-    <div
-      className={buttonClasses}
-    >
+    <div className={buttonClasses}>
       <ButtonChildren
         label={label}
         svgIcon={svgIcon}
@@ -170,6 +176,6 @@ const Button: FC<ButtonProps> = ({
       />
     </div>
   );
-}
+};
 
-export default Button
+export default Button;

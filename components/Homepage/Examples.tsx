@@ -40,7 +40,7 @@ export const Examples = () => {
               icon="lido"
               title="Marek"
               subtitle=""
-              description="Profesjonalizm, precyzyjność i zaangażowanie – to słowa, które najlepiej opisują naszą współpracę z tym architektem. Już na etapie planowania czuliśmy się pewnie, wiedząc, że nasz projekt jest w rękach specjalisty. Efekt końcowy jest niesamowity – architekt stworzył dla nas przestrzeń, która doskonale odpowiada naszym wymaganiom, a do tego jest piękna i funkcjonalna."
+              description="Profesjonalizm, precyzyjność i zaangażowanie – to słowa, które najlepiej opisują naszą współpracę z tym architektem. Już na etapie planowania czuliśmy się pewnie, wiedząc, że nasz projekt jest w rękach specjalisty. Efekt końcowy jest niesamowity – architekt stworzył dla nas przestrzeń, która doskonale odpowiada naszym wymaganiom."
               type="live-app"
             />
             <div className="md:hidden w-full text-p text-grey-500 mt-4">

@@ -2,19 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import "./system-fonts.css";
 
 body {
-  font-family: 'InterRegular';
+  font-family: "InterRegular";
 }
 
-article a[target='_blank']:after {
-    content: ' \21aa';
+article a[target="_blank"]:after {
+  content: " \21aa";
 }
 
 code {
-  font-family: 'Courier';
+  font-family: "Courier";
   font-weight: bolder;
   font-size: 1.1em;
 }
@@ -24,8 +23,6 @@ code {
   width: 30%;
   margin: auto;
 }
-
-
 
 /* CSS for Dev Journeys Genially */
 
@@ -54,7 +51,12 @@ code {
   align-items: center;
   width: 100%;
   height: 520px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/device-cover.jpg);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(/device-cover.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,14 +78,18 @@ code {
 }
 
 .intro button {
-  background-color: #FF5300;
-  color: #FFFFFF;
+  background-color: #9ae721;
+  color: #ffffff;
   padding: 10px 25px;
   border: none;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
 }
+
+/* .myButtonHover:hover {
+  background-color: red!important;
+} */
 
 .projects {
   display: flex;
@@ -154,51 +160,63 @@ code {
   text-decoration: underline;
 }
 
-.nextra-callout a[target='_blank']:after {
-    content: ' \21aa';
+.nextra-callout a[target="_blank"]:after {
+  content: " \21aa";
 }
 
 @layer components {
-  .transition-right { 
-    @apply transition-all group-hover:translate-x-1 group-hover:transform
+  .transition-right {
+    @apply transition-all group-hover:translate-x-1 group-hover:transform;
   }
-  .transition-left { 
-    @apply transition-all group-hover:-translate-x-1 group-hover:transform
+  .transition-left {
+    @apply transition-all group-hover:-translate-x-1 group-hover:transform;
   }
 }
 
 .font-inter {
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 .font-inter-medium {
-  font-family: 'Inter Medium';
+  font-family: "Inter Medium";
 }
 
 .font-mono-medium {
-  font-family: 'HMAlphaMono';
+  font-family: "HMAlphaMono";
 }
 
 .tagText {
   @apply text-p-tag font-semibold uppercase;
 }
 
-
-/* ////////////////////// */
-
-/* .toc {
-  max-width: '100px'!important;
-}
-
-.toc-container {
-  max-width: '100px'!important;
-} */
-
-/* .bg-black {
-  min-height: 60vh!important;
-} */
-
 .nextra-toc {
   /* display: none!important; */
-  width: 100px!important;
+  width: 100px !important;
+}
+
+.hide-on-mobile {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 131px;
+  width: 159.79px;
+  background-color: #9ae721;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.my-button-hover:hover {
+  background-color: #6da317 !important;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.bg-own-green {
+  background-color: #9ae721;
 }
