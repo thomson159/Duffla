@@ -25,12 +25,7 @@ export const Hero = ({ journeyId }: HeroProps) => {
   return (
     <div className="bg-black">
       <div className="relative max-w-[1440px] mx-auto bg-contain md:bg-hero-background bg-no-repeat bg-right">
-        <div
-          className="pb-20 px-4 md:px-28 myMinHeight"
-          id="home"
-          // style={{ minHeight: "calc(66.67vh - 124px)" }}
-          // style={{ minHeight: "60vh" }}
-        >
+        <div className="pb-20 px-4 md:px-28 myMinHeight" id="home">
           <div className="relative w-auto mx-auto md:hidden">
             <Image src={HeroImg} alt="hero" />
             <div className="absolute w-full h-32 bottom-0 left-0 bg-black-gradient-bottom" />
