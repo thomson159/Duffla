@@ -1,9 +1,16 @@
+import { useEffect, useState } from "react";
+
 interface ExploreProps {
   journeyId: string;
 }
 
 export const Explore = ({ journeyId }: ExploreProps) => {
-  const MAP_ID = process.env.MAP_GOOGLE_ID;
+  const MAP_ID = process.env.NEXT_PUBLIC_MAP_GOOGLE_ID;
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <div className="bg-black">
@@ -14,14 +21,19 @@ export const Explore = ({ journeyId }: ExploreProps) => {
               Razem tworzymy przyszłość pełną inspiracji i możliwości!
             </div>
             <div>
-              <iframe
-                src={MAP_ID}
-                height="200"
-                style={{
-                  width: "65vw",
-                }}
-                loading="lazy"
-              ></iframe>
+              {isClient && MAP_ID && (
+                <iframe
+                  src={MAP_ID}
+                  loading="lazy"
+                  title="Explore Map"
+                  height="200"
+                  className="px-4 md:px-28"
+                  style={{
+                    width: "calc(100vw - 20px)",
+                    border: "none",
+                  }}
+                ></iframe>
+              )}
             </div>
           </div>
         </div>

@@ -6,12 +6,14 @@ export const Journeys = () => {
     <>
       <div className="relative bg-cover">
         <div className="max-w-[1440px] mx-auto">
-          <div className="relative py-20 px-4 md:px-28 z-10">
+          <div className="relative py-20 px-4 lg:px-28 z-10">
             <div
               className="text-heading-5 md:text-heading-3 tracking-tight-3 font-semibold"
               id="journeys"
+              style={{
+                textTransform: "uppercase",
+              }}
             >
-              {/* Documentation modules */}
               Obiekty
             </div>
             <div className="flex flex-wrap gap-y-8 md:gap-x-[3%] mt-16">
@@ -38,7 +40,12 @@ export const Journeys = () => {
                 className="w-full"
               />
 
-              <div className="text-heading-6 md:text-heading-5 tracking-tight-3 font-semibold w-full">
+              <div
+                className="text-heading-6 md:text-heading-5 tracking-tight-3 font-semibold w-full"
+                style={{
+                  textTransform: "uppercase",
+                }}
+              >
                 Mieszkaniowe
               </div>
 

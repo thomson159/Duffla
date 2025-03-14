@@ -13,9 +13,7 @@ export const JourneyButton: FC<JourneyButtonProps> = ({
   const [textColor, setTextColor] = useState<"text-black" | "text-white">(
     "text-white"
   );
-  const [containerStyles, setContainerStyles] = useState<string>(
-    ""
-  );
+  const [containerStyles, setContainerStyles] = useState<string>("");
 
   useEffect(() => {
     if (hovered) {
@@ -36,6 +34,9 @@ export const JourneyButton: FC<JourneyButtonProps> = ({
       <div className="w-max flex gap-4 items-center">
         <span
           className={`normal-case text-p font-semibold ${textColor} transition-left duration-300 ease-linear`}
+          style={{
+            textTransform: "uppercase",
+          }}
         >
           więcej
         </span>

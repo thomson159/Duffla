@@ -87,25 +87,5 @@ export const FooterData: FooterDataType = [
         scrollLink: null,
       },
     ]
-  },
-  // {
-  //   name: "",
-  //   links: [
-  //     // {
-  //     //   label: "Terms and Conditions",
-  //     //   link: "https://shop.ledger.com/pages/terms-and-conditions",
-  //     //   scrollLink: null,
-  //     // },
-  //     // {
-  //     //   label: "polityka prywatności",
-  //     //   link: "https://www.ledger.com/privacy-policy",
-  //     //   scrollLink: null,
-  //     // },
-  //     // {
-  //     //   label: "Cookie statement",
-  //     //   link: "https://shop.ledger.com/pages/cookie-policy",
-  //     //   scrollLink: null,
-  //     // },
-  //   ]
-  // },
+  }
 ]

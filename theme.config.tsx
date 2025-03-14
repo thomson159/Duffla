@@ -63,18 +63,33 @@ const config: DocsThemeConfig = {
       <>
         <title>{title}</title>
         <meta name="robots" content="index,follow" />
-        <meta name="description" content={"Tworzymy przestrzeń, która inspiruje."} />
+        <meta
+          name="description"
+          content={"Tworzymy przestrzeń, która inspiruje."}
+        />
         <meta property="og:title" content={"Duffla.pl"} />
         <meta property="og:site_name" content={siteTitle} />
-        <meta property="og:description" content={"Tworzymy przestrzeń, która inspiruje."} />
+        <meta
+          property="og:description"
+          content={"Tworzymy przestrzeń, która inspiruje."}
+        />
         {/* <meta property="og:url" content={url} /> */}
         <meta property="og:image" content="/compressed/uslugowe/meta3/4.jpg" />
-        {/* <meta property="og:locale" content="en_US" /> */}
         <meta property="og:locale" content="pl_PL" />
-
         {/* <link rel="canonical" href="https://developers.ledger.com" /> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
       </>
     );
   },
