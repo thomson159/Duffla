@@ -199,6 +199,16 @@ code {
   width: 100px !important;
 }
 
+.myMinHeight {
+  min-height: calc(66.67vh - 124px);
+}
+
+@media (max-width: 767px) {
+  .myMinHeight {
+    min-height: 60vh;
+  }
+}
+
 .hide-on-mobile {
   display: flex;
   position: absolute;
@@ -211,9 +221,9 @@ code {
   align-items: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 438px) {
   .hide-on-mobile {
-    display: none;
+    bottom: 165px;
   }
 }
 

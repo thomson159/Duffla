@@ -26,9 +26,10 @@ export const Hero = ({ journeyId }: HeroProps) => {
     <div className="bg-black">
       <div className="relative max-w-[1440px] mx-auto bg-contain md:bg-hero-background bg-no-repeat bg-right">
         <div
-          className="pb-20 px-4 md:px-28"
+          className="pb-20 px-4 md:px-28 myMinHeight"
           id="home"
-          style={{ minHeight: "calc(66.67vh - 124px)" }}
+          // style={{ minHeight: "calc(66.67vh - 124px)" }}
+          // style={{ minHeight: "60vh" }}
         >
           <div className="relative w-auto mx-auto md:hidden">
             <Image src={HeroImg} alt="hero" />
@@ -40,9 +41,9 @@ export const Hero = ({ journeyId }: HeroProps) => {
 
           <div style={{ position: "absolute", bottom: 0 }}>
             <div className="text-heading-6 font-semibold tracking-tight-2 mt-5 w-full">
-              <p className="pr-4">
+              <div className="pr-4">
                 <span>Tworzymy przestrzeń, która inspiruje.</span>
-              </p>
+              </div>
             </div>
             <Button
               label="ODKRYWAJ"
