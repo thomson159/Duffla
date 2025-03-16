@@ -2,7 +2,7 @@
 
 This repository contains the Duffla website.
 
-The compiled version of this repository is [duffla-pl.web.app](https://duffla-pl.web.app/).
+The compiled version of this repository is [duffla.pl](https://duffla.pl/).
 
 The portfolio is in the `/pages/projekty` folder. Make a pull request if you want to contribute.
 
