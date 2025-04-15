@@ -12,81 +12,49 @@ export default {
   },
   projekty: {
     type: "menu",
-    title: "Projekty",
+    title: "PROJEKTY",
     href: "/projekty",
     items: {
       uslugowe: {
         type: "page",
-        title: "Usługowe",
+        title: "USŁUGOWE",
         href: "/projekty/uslugowe",
       },
       przemyslowe: {
         type: "page",
-        title: "Przemysłowe",
+        title: "PRZEMYSŁOWE",
         href: "/projekty/przemyslowe",
       },
       konserwatorskie: {
         type: "page",
-        title: "Konserwatorskie",
+        title: "KONSERWATORSKIE",
         href: "/projekty/konserwatorskie",
       },
       jednorodzinne: {
         type: "page",
-        title: "Jednorodzinne",
+        title: "JEDNORODZINNE",
         href: "/projekty/jednorodzinne",
       },
       wielorodzinne: {
         type: "page",
-        title: "Wielorodzinne",
+        title: "WIELORODZINNE",
         href: "/projekty/wielorodzinne",
       },
       wnetrza: {
         type: "page",
-        title: "Wnętrza",
+        title: "WNĘTRZA",
         href: "/projekty/wnetrza",
       },
       urbanistyka: {
         type: "page",
-        title: "Urbanistyka",
+        title: "URBANISTYKA",
         href: "/projekty/urbanistyka",
       },
     },
   },
   kontakt: {
     type: "page",
-    title: "Kontakt",
+    title: "KONTAKT",
     href: "/#kontakt",
-  },
-  // 'dev-tracks': {
-  //   type: 'page',
-  //   title: 'Projekty',
-  //   href: '/dev-tracks/quickstart'
-  // },
-  // docs: {
-  //   type: 'menu',
-  //   title: 'Projekty',
-  //   items: {
-  //     // 'news': {
-  //     //   type: 'page',
-  //     //   title: "What's new?",
-  //     //   href: '/docs/news'
-  //     // },
-  //     'device-app': {
-  //       title: 'OBIEKTY USŁUGOWE',
-  //       href: '/docs/device-app/getting-started'
-  //     },
-  //     'device-interaction': {
-  //       title: 'Device Interaction',
-  //       href: '/docs/device-interaction/getting-started'
-  //     },
-  //     'ledger-live': {
-  //       title: 'Ledger Live',
-  //       href: '/docs/ledger-live/introduction'
-  //     },
-  //     'clear-signing': {
-  //       title: 'Clear Signing',
-  //       href: '/docs/clear-signing/getting-started'
-  //     }
-  //   }
-  // }
+  },  
 };

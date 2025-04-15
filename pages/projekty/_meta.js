@@ -1,21 +1,21 @@
 export default {
   "---": {
-    title: "Projekty",
+    title: "PROJEKTY",
     type: "separator",
   },
   uslugowe: {
-    title: "Usługowe",
+    title: "USŁUGOWE",
   },
   przemyslowe: {
-    title: "Przemysłowe",
+    title: "PRZEMYSŁOWE",
   },
   konserwatorskie: {
-    title: "Konserwatorskie",
+    title: "KONSERWATORSKIE",
   },
-  jednorodzinne: "Jednorodzinne",
-  wielorodzinne: "Wielorodzinne",
-  wnetrza: "Wnętrza",
+  jednorodzinne: "JEDNORODZINNE",
+  wielorodzinne: "WIELORODZINNE",
+  wnetrza: "WNĘTRZA",
   urbanistyka: {
-    title: "Urbanistyka",
+    title: "URBANISTYKA",
   },
 };

@@ -5,7 +5,12 @@
 @import "./system-fonts.css";
 
 body {
-  font-family: "InterRegular";
+  /* font-family: "InterRegular"; */
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
 article a[target="_blank"]:after {
@@ -13,7 +18,7 @@ article a[target="_blank"]:after {
 }
 
 code {
-  font-family: "Courier";
+  /* font-family: "Courier"; */
   font-weight: bolder;
   font-size: 1.1em;
 }
@@ -174,15 +179,15 @@ code {
 }
 
 .font-inter {
-  font-family: "Inter";
+  /* font-family: "Inter"; */
 }
 
 .font-inter-medium {
-  font-family: "Inter Medium";
+  /* font-family: "Inter Medium"; */
 }
 
 .font-mono-medium {
-  font-family: "HMAlphaMono";
+  /* font-family: "HMAlphaMono"; */
 }
 
 .tagText {
@@ -194,21 +199,31 @@ code {
   width: 100px !important;
 }
 
+.myMinHeight {
+  min-height: calc(66.67vh - 124px);
+}
+
+@media (max-width: 767px) {
+  .myMinHeight {
+    min-height: 60vh;
+  }
+}
+
 .hide-on-mobile {
   display: flex;
   position: absolute;
   top: 0;
   bottom: 131px;
-  width: 159.79px;
+  width: 186.61px;
   background-color: #9ae721;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 438px) {
   .hide-on-mobile {
-    display: none;
+    bottom: 165px;
   }
 }
 

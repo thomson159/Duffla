@@ -1,7 +1,7 @@
 import { useState, useEffect, FC, HTMLAttributes } from "react";
 import Image from "next/image";
 import { combination } from "../../lib/utils";
-import { Tag } from "./Tag";
+// import { Tag } from "./Tag";
 import { JourneyButton } from "./JourneyButton";
 import { useRouter } from "next/navigation";
 
@@ -53,8 +53,8 @@ export const JourneyCard: FC<JourneyCardProps> = ({
       case "blockchain":
         router.push("/projekty/wielorodzinne");
         break;
-      // case "":
-      //   router.push("/projekty/konserwatorskie");
+        // case "":
+        //   router.push("/projekty/konserwatorskie");
         break;
       case "A":
         router.push("/projekty/wnetrza");
@@ -89,7 +89,12 @@ export const JourneyCard: FC<JourneyCardProps> = ({
       </div>
       <div className="flex flex-col px-8 pt-6 mb-6">
         {/* <Tag type={type} /> */}
-        <div className="text-heading-5 font-semibold tracking-tight-2 mt-4">
+        <div
+          className="text-heading-6 md:text-heading-5 font-semibold tracking-tight-2 mt-4"
+          style={{
+            textTransform: "uppercase",
+          }}
+        >
           {title}
         </div>
         <div className="text-heading-7 font-semibold mt-2">{description}</div>

@@ -1,3 +1,3 @@
 export default {
-  grossa: "Manufaktura Grossa",
+  grossa: "MANUFAKTURA GROSSA",
 };

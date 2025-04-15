@@ -9,7 +9,7 @@ export const Community = () => {
             <div className="text-heading-5 md:text-heading-3 font-semibold tracking-tight-3 text-center">
               Napisz do nas!
             </div>
-            <div className="text-p-emphasis-mobile md:text-p-emphasis text-center">
+            <div className="md:text-p-emphasis text-center">
               Opowiedz nam o swojej wizji – wspólnie stworzymy coś wyjątkowego!
             </div>
             <div className="myFlex">

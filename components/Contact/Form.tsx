@@ -176,13 +176,11 @@ const Form: React.FC = () => {
               alignItems: "center",
             }}
           >
-            {/* <button id="confirm" type="submit">
-              Wyślij
-            </button> */}
             <Button
               id="confirm"
-              label="Wyślij"
+              label="WYŚLIJ"
               type="primary"
+              // type="submit"
               svgIcon="arrow-external"
               style={{
                 marginLeft: "auto",
